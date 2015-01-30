@@ -1,0 +1,23 @@
+{
+  "name": "gitReal",
+  "version": "0.0.0",
+  "homepage": "https://github.com/cmccand/gitReal",
+  "authors": [
+    "Chris McCandlish <cmccand@gmail.com>"
+  ],
+  "description": "json file for movie project",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "foundation": "~5.5.1",
+    "jquery": "~2.1.3",
+    "underscore": "~1.7.0"
+  }
+}
