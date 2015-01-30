@@ -2106,6 +2106,18 @@ ntry":"USA",
 }
 //
 //       Heartbroken
+<<<<<<< HEAD
+//       It’s OK, all you need is your dog. But he’ll die soon.
+//       My Dog Skip,
+//       Marley and Me
+//       Old Yeller
+//       What doesn’t kill you will leave you scarred for the rest of your life
+//       My Girl,
+//       Man in the Moon,
+//       Snakes on a Plane
+//
+//
+=======
 {
   "Title": "My Dog Skip",
   "Year": "2000",
@@ -2241,3 +2253,4 @@ ntry":"USA",
   "Type": "movie",
   "Response": "True"
 }
+>>>>>>> b308502a6464934a130271e90fcbe029cc0aa36d
