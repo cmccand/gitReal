@@ -9,6 +9,19 @@ section {
   section .genre {
     margin-top: -2%; }
 
+.animate {
+  -webkit-animation-name: animation;
+  -webkit-animation-duration: 5s;
+  -webkit-opacity: 0; }
+
+@-webkit-keyframes animation {
+  0% {
+    opacity: 100; }
+
+  100% {
+    opacity: 0;
+    transform: translateY(1000px); } }
+
 div {
   display: none; }
 

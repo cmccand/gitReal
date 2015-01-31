@@ -11,7 +11,8 @@ var movies = {
   renderAlien: function (alien, index, array) {
     alien.idx = index;
     var compiledAlien = _.template(templates.movieData);
-    $('.row').append(compiledAlien(alien));
+    $('.aliensResult').append(compiledAlien(alien));
+    $('.aliensResult').siblings().remove();
 
 
   },
@@ -25,13 +26,16 @@ var movies = {
 renderDysfunct: function (dysfunct, index, array) {
   dysfunct.idx = index;
   var compiledDysfunct = _.template(templates.movieData);
-  $('.row').append(compiledDysfunct(dysfunct));
+  $('.dysfunctional').append(compiledDysfunct(dysfunct));
+  $('.dysfunctional').siblings().remove();
+
 
 
 },
 
 renderAllDysfunct: function (dysfunctInfo) {
   dysfunctInfo.forEach(movies.renderDysfunct);
+
 },
 
 renderMustFind: function (mustFind, index, array) {
@@ -44,6 +48,7 @@ renderMustFind: function (mustFind, index, array) {
 
 renderAllMustFind: function (MustFindInfo) {
   MustFindInfo.forEach(movies.renderMustFind);
+
 }
 
 
@@ -56,12 +61,13 @@ renderAllMustFind: function (MustFindInfo) {
 $(document).ready(function(){
   movies.init();
 
+
+
   $('section div').on('click', 'button', function(event){
     event.preventDefault();
-
     var relatedMood = '.' + $(this).attr('rel');
-    $(this).siblings().remove();
-    $(this).remove();
+    $(this).siblings().addClass('animate');
+    // $(this).addClass('animateChoice');
     $(relatedMood).addClass('active');
     $(relatedMood).parent('div').addClass('active');
     $(relatedMood).parent().siblings().removeClass('active');
@@ -72,20 +78,21 @@ $(document).ready(function(){
   $('.genre').on('click', 'button', function (event) {
     event.preventDefault();
 
-    $(this).siblings.removeClass('active');
+    $(this).siblings().removeClass('active');
     $(this).parent('section').removeClass('active');
     $(this).removeClass('active');
-    $(this).parent.siblings('.results').addClass('active');
+    $(this).parent().siblings('.results').addClass('active');
+
   });
 
-  $('.results').on('click', 'button', function (event) {
-    event.preventDefault();
-
-    $(this).siblings.removeClass('active');
-    $(this).parent('genre').removeClass('active');
-    $(this).removeClass('active');
-    $(this).parent.siblings('.aliensResult').addClass('active');
-  });
+  // $('.results').on('click', 'button', function (event) {
+  //   event.preventDefault();
+  //
+  //   $(this).siblings().removeClass('active');
+  //   $(this).parent('genre').removeClass('active');
+  //   $(this).removeClass('active');
+  //   $(this).parent().siblings('.aliensResult').addClass('active');
+  // });
 
 
 });
