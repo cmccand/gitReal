@@ -1,4 +1,3 @@
-
 var movies = {
   init: function (){
     movies.renderAllAlien(alien);
@@ -32,13 +31,14 @@ var movies = {
 $(document).ready(function(){
   movies.init();
 
-  $('button').on('click', function(event){
-  event.preventDefault();
+  $('div').on('click', 'button', function(event){
+    event.preventDefault();
 
-  var relatedMood = '.' + $(this).attr('rel');
-  $(this).siblings().remove();
-  $(this).remove();
-  $(relatedMood).addClass('active');
+    var relatedMood = '.' + $(this).attr('rel');
+    $(this).siblings().remove();
+    $(this).remove();
+    $(relatedMood).addClass('active');
+    $(relatedMood).parent('div').addClass('active');
 
 
   });
