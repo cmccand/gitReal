@@ -1,6 +1,7 @@
 var movies = {
   init: function (){
     movies.renderAllAlien(alien);
+    movies.renderAllDysfunct(dysfunct);
 
   },
 
@@ -16,13 +17,24 @@ var movies = {
 
   renderAllAlien: function (alienInfo) {
     alienInfo.forEach(movies.renderAlien);
-  }
+  },
+
+
+
+renderDysfunct: function (dysfunct, index, array) {
+  dysfunct.idx = index;
+  var compiledDysfunct = _.template(templates.movieData);
+  $('.row').append(compiledDysfunct(dysfunct));
+
+
+},
+
+renderAllDysfunct: function (dysfunctInfo) {
+  dysfunctInfo.forEach(movies.renderDysfunct);
+}
 
 
 };
-
-
-
 
 
 
@@ -51,6 +63,15 @@ $(document).ready(function(){
     $(this).parent('section').removeClass('active');
     $(this).removeClass('active');
     $(this).parent.siblings('.results').addClass('active');
+  });
+
+  $('.results').on('click', 'button', function (event) {
+    event.preventDefault();
+
+    $(this).siblings.removeClass('active');
+    $(this).parent('genre').removeClass('active');
+    $(this).removeClass('active');
+    $(this).parent.siblings('.aliensResult').addClass('active');
   });
 
 
