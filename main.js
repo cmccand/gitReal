@@ -31,7 +31,7 @@ var movies = {
 $(document).ready(function(){
   movies.init();
 
-  $('div').on('click', 'button', function(event){
+  $('section div').on('click', 'button', function(event){
     event.preventDefault();
 
     var relatedMood = '.' + $(this).attr('rel');
@@ -39,6 +39,7 @@ $(document).ready(function(){
     $(this).remove();
     $(relatedMood).addClass('active');
     $(relatedMood).parent('div').addClass('active');
+    $(relatedMood).parent().siblings().removeClass('active');
 
 
   });
