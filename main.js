@@ -31,12 +31,13 @@ var movies = {
 $(document).ready(function(){
   movies.init();
 
+
+
   $('section div').on('click', 'button', function(event){
     event.preventDefault();
-
     var relatedMood = '.' + $(this).attr('rel');
-    $(this).siblings().remove();
-    $(this).remove();
+    $(this).siblings().addClass('animate');
+    // $(this).addClass('animateChoice');
     $(relatedMood).addClass('active');
     $(relatedMood).parent('div').addClass('active');
     $(relatedMood).parent().siblings().removeClass('active');
