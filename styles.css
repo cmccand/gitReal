@@ -1,5 +1,16 @@
+section {
+  width: 980px;
+  margin: auto;
+  display: none; }
+  section .mood, section .genre, section .subMood {
+    display: block;
+    text-align: center;
+    margin-top: 40%; }
+  section .genre {
+    margin-top: -2%; }
+
 div {
   display: none; }
 
 .active {
-  display: inline-block; }
+  display: block; }

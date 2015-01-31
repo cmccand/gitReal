@@ -1,8 +1,30 @@
 
+section {
+  width: 980px;
+  margin: auto;
+  display: none;
+  .mood, .subMood {
+    display: block;
+    text-align: center;
+    margin-top: 40%;
+  }
+  .genre {
+    @extend .mood;
+    margin-top: -2%;
+    }
+  }
+
+
+.results {
+
+}
+
+
+
 div{
   display: none;
 }
 
 .active {
-  display: inline-block;
+  display: block;
 }

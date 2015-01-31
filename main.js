@@ -9,7 +9,7 @@ var movies = {
   renderAlien: function (alien, index, array) {
     alien.idx = index;
     var compiledAlien = _.template(templates.movieData);
-    $('.aliensResult').append(compiledAlien(alien));
+    $('.row').append(compiledAlien(alien));
 
 
   },
@@ -41,6 +41,15 @@ $(document).ready(function(){
     $(relatedMood).parent('div').addClass('active');
 
 
+  });
+
+  $('.genre').on('click', 'button', function (event) {
+    event.preventDefault();
+
+    $(this).siblings.removeClass('active');
+    $(this).parent('section').removeClass('active');
+    $(this).removeClass('active');
+    $(this).parent.siblings('.results').addClass('active');
   });
 
 
