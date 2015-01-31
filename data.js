@@ -138,10 +138,10 @@ var dysfunct = [
   "Response": "True"
 }
 ];
-/*
+
 //Silly
 //Must find misplaced belongings
-
+var mustFind = [
 {
   "Title": "Dude, Where's My Car?",
   "Year": "2000",
@@ -207,7 +207,10 @@ var dysfunct = [
   "imdbID": "tt0195945",
   "Type": "movie",
   "Response": "True"
-},
+}
+];
+
+/*
 
 //Dog Escapes from his vage and wreaks havoc on outside world
 {
