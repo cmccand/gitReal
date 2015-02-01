@@ -68,7 +68,7 @@ section {
   section .mood, section .genre, section .subMood {
     display: block;
     text-align: center;
-    margin-top: 40%; }
+    margin-top: 20%; }
   section .genre {
     margin-top: -6%; }
   section .subMood {
@@ -83,11 +83,11 @@ section {
   width: 1200px;
   margin: 11% auto;
   display: flex;
-  justify-content: space-between; }
+  justify-content: center; }
 
 .resultBox {
   display: inline-block;
-  width: 30%;
+  width: 29%;
   vertical-align: top; }
   .resultBox img {
     width: 300px;
@@ -104,14 +104,20 @@ section {
   opacity: 0; }
 
 .moodbtn {
-  width: 200px;
-  height: 300px;
-  background-color: #e8e8e8;
+  text-align: center;
+  margin: 20px auto;
+  font-family: 'PT Sans', Courier;
+  font-size: 30px;
+  text-transform: uppercase;
   color: black;
-  border: 5px solid black;
+  text-shadow: -3px 0px 0px #eee, 5px 1px 0px #707070;
+  width: 242px;
+  height: 120px;
+  background-color: #e8e8e8;
+  border: 3px solid #707070;
   border-radius: 10px; }
   .moodbtn:hover {
-    border: 5px solid #5ec494;
+    border: 3px solid #5ec494;
     -webkit-transition: 1s ease;
     -moz-transition: 1s ease;
     transition: 1s ease;
