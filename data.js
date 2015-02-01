@@ -1744,12 +1744,12 @@ var hurt = [
   "Response": "True"
 }
 ];
-/*
+
 //   Dark
 //
 //   Cynical
 //   You’re 26 and going through a midlife crisis (
-
+var crisis = [
 {
   "Title": "Girl Most Likely",
   "Year": "2012",
@@ -1815,8 +1815,11 @@ var hurt = [
   "imdbID": "tt0061722",
   "Type": "movie",
   "Response": "True"
-},
+}
+];
+
 //     Sarcasm is endearing
+var sarcasm = [
 {
   "Title": "American Psycho",
   "Year": "2000",
@@ -1882,9 +1885,12 @@ var hurt = [
   "imdbID": "tt0095016",
   "Type": "movie",
   "Response": "True"
-},
+}
+];
+
 //     Sadistic
-//     If its banned, it must be good
+//     If it's banned, it must be good
+var banned = [
 {
   "Title": "Salò, or the 120 Days of Sodom",
   "Year": "1975",
@@ -1950,9 +1956,12 @@ var hurt = [
   "imdbID": "tt1273235",
   "Type": "movie",
   "Response": "True"
-},
+}
+];
+
 //
 //     You better chop them up or eat them whole
+var chopEm = [
 {
   "Title": "The Texas Chain Saw Massacre",
   "Year": "1974",
@@ -2018,11 +2027,12 @@ var hurt = [
   "imdbID": "tt0212985",
   "Type": "movie",
   "Response": "True"
-},
-//
-//
+}
+];
+
 //     Perverted
 //     Incest, adultery and autoerotic asphyxiation, Oh my! (
+var incest = [
 {
   "Title": "Ken Park",
   "Year": "2002",
@@ -2088,9 +2098,12 @@ var hurt = [
   "imdbID": "tt0120663",
   "Type": "movie",
   "Response": "True"
-},
+}
+];
+
 //
 //       How to incorporate food into sex
+var foodSex = [
 {
   "Title": "Last Tango in Paris",
   "Year": "1972",
@@ -2156,10 +2169,11 @@ var hurt = [
   "imdbID": "tt0091635",
   "Type": "movie",
   "Response": "True"
-},
-//
+}
+];
+
 //       Heartbroken
-<<<<<<< HEAD
+
 //       It’s OK, all you need is your dog. But he’ll die soon.
 //       My Dog Skip,
 //       Marley and Me
@@ -2170,7 +2184,7 @@ var hurt = [
 //       Snakes on a Plane
 //
 //
-=======
+var deadDog2 = [
 {
   "Title": "My Dog Skip",
   "Year": "2000",
@@ -2236,10 +2250,11 @@ var hurt = [
   "imdbID": "tt0050798",
   "Type": "movie",
   "Response": "True"
-},
-
+}
+];
 
 //  What doesn’t kill you will leave you scarred for the rest of your life
+var scarred = [
 {
   "Title": "My Girl",
   "Year": "1991",
@@ -2305,6 +2320,5 @@ var hurt = [
   "imdbID": "tt0417148",
   "Type": "movie",
   "Response": "True"
-},
+}
 ];
-*/

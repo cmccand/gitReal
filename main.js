@@ -24,6 +24,13 @@ var movies = {
     movies.renderAllNazi(nazi);
     movies.renderAllSplatter(splatter);
     movies.renderAllHurt(hurt);
+    movies.renderAllCrisis(crisis);
+    movies.renderAllSarcasm(sarcasm);
+    movies.renderAllBanned(banned);
+    movies.renderAllChopEm(chopEm);
+    movies.renderAllIncest(incest);
+    movies.renderAllDeadDog2(deadDog2);
+    movies.renderAllScarred(scarred);
   },
 
   renderAlien: function (alien, index, array) {
@@ -335,8 +342,91 @@ renderHurt: function (hurt, index, array) {
 renderAllHurt: function (HurtInfo) {
   HurtInfo.forEach(movies.renderHurt);
 
-}
+},
 
+renderCrisis: function (crisis, index, array) {
+  crisis.idx = index;
+  var compiledCrisis = _.template(templates.movieData);
+  $('.midlifeCrisis').append(compiledCrisis(crisis));
+
+},
+
+renderAllCrisis: function (CrisisInfo) {
+  CrisisInfo.forEach(movies.renderCrisis);
+
+},
+
+renderSarcasm: function (sarcasm, index, array) {
+  sarcasm.idx = index;
+  var compiledSarcasm = _.template(templates.movieData);
+  $('.sarcasm').append(compiledSarcasm(sarcasm));
+
+},
+
+renderAllSarcasm: function (SarcasmInfo) {
+  SarcasmInfo.forEach(movies.renderSarcasm);
+
+},
+
+renderBanned: function (banned, index, array) {
+  banned.idx = index;
+  var compiledBanned = _.template(templates.movieData);
+  $('.banned').append(compiledBanned(banned));
+
+},
+
+renderAllBanned: function (BannedInfo) {
+  BannedInfo.forEach(movies.renderBanned);
+
+},
+
+renderChopEm: function (chopEm, index, array) {
+  chopEm.idx = index;
+  var compiledChopEm = _.template(templates.movieData);
+  $('.chopEm').append(compiledChopEm(chopEm));
+
+},
+
+renderAllChopEm: function (ChopEmInfo) {
+  ChopEmInfo.forEach(movies.renderChopEm);
+
+},
+
+renderIncest: function (incest, index, array) {
+  incest.idx = index;
+  var compiledIncest = _.template(templates.movieData);
+  $('.incest').append(compiledIncest(incest));
+
+},
+
+renderAllIncest: function (IncestInfo) {
+  IncestInfo.forEach(movies.renderIncest);
+
+},
+
+renderDeadDog2: function (deadDog2, index, array) {
+  deadDog2.idx = index;
+  var compiledDeadDog2 = _.template(templates.movieData);
+  $('.dog2').append(compiledDeadDog2(deadDog2));
+
+},
+
+renderAllDeadDog2: function (deadDogInfo2) {
+  deadDogInfo2.forEach(movies.renderDeadDog2);
+
+},
+
+renderScarred: function (scarred, index, array) {
+  scarred.idx = index;
+  var compiledScarred = _.template(templates.movieData);
+  $('.scarred').append(compiledScarred(scarred));
+
+},
+
+renderAllScarred: function (ScarredInfo) {
+  ScarredInfo.forEach(movies.renderScarred);
+
+}
 
 
 };
