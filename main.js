@@ -67,6 +67,7 @@ $(document).ready(function(){
     event.preventDefault();
     var relatedMood = '.' + $(this).attr('rel');
     $(this).siblings().addClass('animate');
+    $(this).addClass('chosenOne');
     // $(this).addClass('animateChoice');
     $(relatedMood).addClass('active');
     $(relatedMood).parent('div').addClass('active');
