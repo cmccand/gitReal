@@ -662,9 +662,10 @@ var Drunk = [
 }
 ];
 
-/*
 
 // Maybe you’re lonely because you suck
+
+var youSuck = [
 {
   "Title": "Frances Ha",
   "Year": "2012",
@@ -730,10 +731,12 @@ var Drunk = [
   "imdbID": "tt1343092",
   "Type": "movie",
   "Response": "True"
-},
+}
+];
 
 // Nostalgic
 // You should’ve been alive in the 40’s when everyone was witty
+var Forties = [
 {
   "Title": "The Maltese Falcon",
   "Year": "1941",
@@ -800,8 +803,10 @@ var Drunk = [
   "Type": "movie",
   "Response": "True"
 },
+];
 
 // You haven’t been happy since you were 12
+var happySince12 = [
 {
   "Title": "Stand by Me",
   "Year": "1986",
@@ -868,9 +873,11 @@ var Drunk = [
   "Type": "movie",
   "Response": "True"
 },
+];
 
 // Sappy
 // The right person will enter your life in the form of a hotel maid
+var maid = [
 {
   "Title": "Maid in Manhattan",
   "Year": "2002",
@@ -936,8 +943,10 @@ var Drunk = [
   "imdbID": "tt0800039",
   "Type": "movie",
   "Response": "True"
-},
+}
+];
 
+var vDay = [
 // It’s Valentine’s Day and I’m alone
 {
   "Title": "Requiem for a Dream",
@@ -1004,11 +1013,12 @@ var Drunk = [
   "imdbID": "tt1179891",
   "Type": "movie",
   "Response": "True"
-},
+}
+];
 
-//
 // Heartbroken
 // It’s OK, all you need is your dog. But he’ll die soon.
+var deadDog = [
 {
   "Title": "My Dog Skip",
   "Year": "2000",
@@ -1074,9 +1084,11 @@ var Drunk = [
   "imdbID": "tt0050798",
   "Type": "movie",
   "Response": "True"
-},
+}
+];
 
 //   What doesn’t kill you will leave you bitter for the rest of your life
+var bitter = [
 {
   "Title": "Falling Down",
   "Year": "1993",
@@ -1142,14 +1154,14 @@ var Drunk = [
   "imdbID": "tt1125849",
   "Type": "movie",
   "Response": "True"
-},
-],
-//
+}
+];
+
 //   Inspired
 //
 //   Sporty
 //   If you don’t get chill bumps when Rudy makes the sack, try our Lonely category
-
+var Rudy = [
 {
   "Title": "Rudy",
   "Year": "1993",
@@ -1237,10 +1249,11 @@ var Drunk = [
   "imdbID": "tt0104868",
   "Type": "movie",
   "Response": "True"
-},
-
+}
+];
 
 //   The theme music alone will make you feel invincible
+var Theme = [
 {
   "Title": "Rocky",
   "Year": "1976",
@@ -1307,9 +1320,11 @@ var Drunk = [
   "Type": "movie",
   "Response": "True"
 },
+];
+
 //   Intense
-//
 //   The more of an asshole you are, the more likely you are to make history
+var asshole = [
 {
   "Title": "Aviator",
   "Year": "2005",
@@ -1375,8 +1390,11 @@ var Drunk = [
   "imdbID": "tt0264464",
   "Type": "movie",
   "Response": "True"
-},
+}
+];
+
 //   You’ll survive prison if your jawline is strong enough
+var Prison = [
 {
   "Title": "Escape from Alcatraz",
   "Year": "1979",
@@ -1442,10 +1460,13 @@ var Drunk = [
   "imdbID": "tt0083284",
   "Type": "movie",
   "Response": "True"
-},
-//
+}
+];
+
 //   Intelligent
 //   If you hear voices in your head, you might be a genius
+
+var genius = [
 {
   "Title": "A Beautiful Mind",
   "Year": "2001",
@@ -1511,8 +1532,11 @@ var Drunk = [
   "imdbID": "tt0095953",
   "Type": "movie",
   "Response": "True"
-},
+}
+];
+
 //   Crack the Nazi code, help end the war, and you’ll end up chemically castrated and suicidal
+var nazi = [
 {
   "Title": "The Imitation Game",
   "Year": "2014",
@@ -1578,7 +1602,9 @@ var Drunk = [
   "imdbID": "tt0361748",
   "Type": "movie",
   "Response": "True"
-},
+}
+];
+/*
 //
 //   Creative
 {
