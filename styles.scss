@@ -1,3 +1,9 @@
+@mixin transition ($transition) {
+  -webkit-transition: $transition;
+  -moz-transition: $transition;
+  transition: $transition;
+}
+
 
 section {
   width: 980px;
@@ -17,6 +23,33 @@ section {
       margin-top: -72px;
       }
     }
+
+
+.chosenOne
+    {
+
+      -webkit-animation-name: rise;
+      -webkit-animation-duration:2s;
+      -webkit-animation-fill-mode: forwards;
+
+    }
+
+.moodbtn {
+  width: 200px;
+  height: 300px;
+  background-color: #e8e8e8;
+  color: black;
+  border: 5px solid black;
+  border-radius: 10px;
+  &:hover {
+    border: 5px solid #5ec494;
+    @include transition(all 1s ease);
+    background-color: #e8e8e8;
+    color: black;
+
+  }
+}
+
 
 
 
@@ -41,13 +74,12 @@ section {
   }
 }
 
-.chosenOne
-{
-  -webkit-animation-name: rise;
-  -webkit-animation-duration:2s;
-  -webkit-animation-fill-mode: forwards;
 
-}
+
+
+
+
+
 
 @-webkit-keyframes rise{
   0%{
@@ -58,8 +90,6 @@ section {
     -webkit-transform: translateY(-380px);
   }
 }
-
-
 
 
 

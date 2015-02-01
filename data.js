@@ -210,9 +210,10 @@ var mustFind = [
 }
 ];
 
-/*
 
-//Dog Escapes from his vage and wreaks havoc on outside world
+
+//Dog Escapes from his cage and wreaks havoc on outside world
+var Dog = [
 {
   "Title": "Beethoven",
   "Year": "1992",
@@ -279,9 +280,12 @@ var mustFind = [
   "Type": "movie",
   "Response": "True"
 },
+];
+
 //Optimistic
 //Everything in your life will work out great if you just believe
 
+var believe = [
 {
   "Title": "Angels in the Outfield",
   "Year": "1994",
@@ -347,8 +351,9 @@ var mustFind = [
   "imdbID": "tt0449059",
   "Type": "movie",
   "Response": "True"
-},
-
+}
+];
+/*
 //At least you don’t have cancer
 {
   "Title": "Forrest Gump",
