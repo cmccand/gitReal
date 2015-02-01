@@ -1,3 +1,14 @@
+body, h1, h2, h3, h4, h5, p, a {
+  margin: 0;
+  padding: 0; }
+
+ul {
+  list-style-type: none;
+  display: inline-block; }
+
+li {
+  display: block; }
+
 video.bgvid {
   position: fixed;
   right: 0;
@@ -8,6 +19,9 @@ video.bgvid {
   height: auto;
   z-index: -100;
   opacity: 0.5;
+  filter: sepia(0.5);
+  -webkit-filter: sepia(0.5);
+  -moz-filter: sepia(0.5);
   background-repeat: no-repeat;
   background-size: cover; }
 
@@ -25,9 +39,36 @@ section {
     margin-top: -181px; }
 
 .chosenOne {
-  -webkit-animation-name: rise;
-  -webkit-animation-duration: 2s;
-  -webkit-animation-fill-mode: forwards; }
+  animation: rise 2s forwards;
+  -webkit-animation: rise 2s forwards;
+  -moz-animation: rise 2s forwards; }
+
+.results.active {
+  width: 1200px;
+  margin: 11% auto;
+  display: flex;
+  justify-content: space-between; }
+
+.resultBox {
+  display: inline-block;
+  width: 30%;
+  vertical-align: top; }
+  .resultBox img {
+    width: 300px;
+    height: 450px;
+    border-radius: 5px;
+    filter: sepia(1);
+    -webkit-filter: sepia(1);
+    -moz-filter: sepia(1);
+    -webkit-box-shadow: 9px 10px 9px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 9px 10px 9px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 9px 10px 9px 0px rgba(0, 0, 0, 0.75); }
+
+.animate {
+  animation: animation 4s;
+  -webkit-animation: animation 4s;
+  -moz-animation: animation 4s;
+  opacity: 0; }
 
 .moodbtn {
   width: 200px;
@@ -38,15 +79,11 @@ section {
   border-radius: 10px; }
   .moodbtn:hover {
     border: 5px solid #5ec494;
-    /*     @include transition( 1s ease);
- */
+    -webkit-transition: 1s ease;
+    -moz-transition: 1s ease;
+    transition: 1s ease;
     background-color: #e8e8e8;
     color: black; }
-
-.animate {
-  -webkit-animation-name: animation;
-  -webkit-animation-duration: 4s;
-  -webkit-opacity: 0; }
 
 @-webkit-keyframes animation {
   0% {
@@ -69,6 +106,10 @@ div {
 
 .active {
   display: block; }
+
+.resultBox.active {
+  display: inline-block;
+  padding: 20px; }
 
 @media screen and (max-device-width: 800px) {
   html {

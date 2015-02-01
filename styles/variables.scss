@@ -1,0 +1,29 @@
+@mixin transition ($transition) {
+  -webkit-transition: $transition;
+  -moz-transition: $transition;
+  transition: $transition;
+}
+
+@mixin chosen ($chosen) {
+  animation: $chosen;
+  -webkit-animation: $chosen;
+  -moz-animation: $chosen;
+}
+
+@mixin animateDown ($animateDown) {
+  animation: $animateDown;
+  -webkit-animation: $animateDown;
+  -moz-animation: $animateDown;
+}
+
+@mixin sepia ($sepia) {
+  filter: $sepia;
+  -webkit-filter: $sepia;
+  -moz-filter: $sepia;
+}
+
+@mixin shadow($shadow){
+  -webkit-box-shadow: $shadow;
+  -moz-box-shadow: $shadow;
+  box-shadow: $shadow;
+}
