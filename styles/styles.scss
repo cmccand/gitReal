@@ -100,8 +100,6 @@ section {
 }
 
 
-
-
 .results.active {
   width: 1200px;
   margin: 11% auto;
@@ -119,8 +117,8 @@ section {
     height: 450px;
     border-radius: 5px;
     @include shadow(9px 10px 9px 0px rgba(0,0,0,0.75));
+    }
   }
-}
 
 
 .animate {
