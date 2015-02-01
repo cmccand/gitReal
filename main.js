@@ -12,7 +12,6 @@ var movies = {
     alien.idx = index;
     var compiledAlien = _.template(templates.movieData);
     $('.aliensResult').append(compiledAlien(alien));
-    $('.aliensResult').siblings().remove();
 
 
   },
@@ -27,7 +26,6 @@ renderDysfunct: function (dysfunct, index, array) {
   dysfunct.idx = index;
   var compiledDysfunct = _.template(templates.movieData);
   $('.dysfunctional').append(compiledDysfunct(dysfunct));
-  $('.dysfunctional').siblings().remove();
 
 
 
@@ -41,7 +39,7 @@ renderAllDysfunct: function (dysfunctInfo) {
 renderMustFind: function (mustFind, index, array) {
   mustFind.idx = index;
   var compiledMustFind = _.template(templates.movieData);
-  $('.row').append(compiledMustFind(mustFind));
+  $('.misplaced').append(compiledMustFind(mustFind));
 
 
 },
@@ -75,15 +73,15 @@ $(document).ready(function(){
 
   });
 
-  $('.genre').on('click', 'button', function (event) {
-    event.preventDefault();
-
-    $(this).siblings().removeClass('active');
-    $(this).parent('section').removeClass('active');
-    $(this).removeClass('active');
-    $(this).parent().siblings('.results').addClass('active');
-
-  });
+  // $('.genre').on('click', 'button', function (event) {
+  //   event.preventDefault();
+  //
+  //   $(this).siblings().removeClass('active');
+  //   $(this).parent('section').removeClass('active');
+  //   $(this).removeClass('active');
+  //   $(this).parent().siblings('.results').addClass('active');
+  //
+  // });
 
   // $('.results').on('click', 'button', function (event) {
   //   event.preventDefault();
@@ -93,6 +91,6 @@ $(document).ready(function(){
   //   $(this).removeClass('active');
   //   $(this).parent().siblings('.aliensResult').addClass('active');
   // });
-
+  //
 
 });
