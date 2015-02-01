@@ -120,7 +120,7 @@ renderAllPurple: function (PurpleInfo) {
 
 renderDrunk: function (Drunk, index, array) {
   Drunk.idx = index;
-  var compiledDrunk = _.template(templates.Drunk);
+  var compiledDrunk = _.template(templates.movieData);
   $('.famousWriter').append(compiledDrunk(Drunk));
 
 
