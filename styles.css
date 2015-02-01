@@ -16,23 +16,20 @@ section {
   -webkit-animation-duration: 2s;
   -webkit-animation-fill-mode: forwards; }
 
-.moodbtn, .subHappy {
+.moodbtn {
   width: 200px;
   height: 300px;
   background-color: #e8e8e8;
   color: black;
   border: 5px solid black;
   border-radius: 10px; }
-  .moodbtn:hover, .subHappy:hover {
+  .moodbtn:hover {
     border: 5px solid #5ec494;
-    -webkit-transition: all 1s ease;
-    -moz-transition: all 1s ease;
-    transition: all 1s ease;
+    -webkit-transition: all 1s forwards ease;
+    -moz-transition: all 1s forwards ease;
+    transition: all 1s forwards ease;
     background-color: #e8e8e8;
     color: black; }
-
-.subHappy:hover {
-  border: 5px solid red; }
 
 .animate {
   -webkit-animation-name: animation;
