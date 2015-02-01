@@ -9,10 +9,20 @@ var movies = {
     movies.renderAllFakeblood(Fakeblood);
     movies.renderAllPurple(Purple);
     movies.renderAllDrunk(Drunk);
-
+    movies.renderAllSuck(youSuck);
+    movies.renderAllForties(Forties);
+    movies.renderAllHappy(happySince12);
+    movies.renderAllmaid(maid);
+    movies.renderAllVDay(vDay);
+    movies.renderAllDeadDog(deadDog);
+    movies.renderAllBitter(bitter);
+    movies.renderAllRudy(Rudy);
+    movies.renderAllTheme(Theme);
+    movies.renderAllAsshole(asshole);
+    movies.renderAllPrison(Prison);
+    movies.renderAllGenius(genius);
+    movies.renderAllNazi(nazi);
   },
-
-
 
   renderAlien: function (alien, index, array) {
     alien.idx = index;
@@ -129,9 +139,177 @@ renderDrunk: function (Drunk, index, array) {
 renderAllDrunk: function (DrunkInfo) {
   DrunkInfo.forEach(movies.renderDrunk);
 
+},
+
+renderSuck: function (youSuck, index, array) {
+  youSuck.idx = index;
+  var compiledYouSuck = _.template(templates.movieData);
+  $('.youSuck').append(compiledYouSuck(youSuck));
+
+
+},
+
+renderAllSuck: function (SuckInfo) {
+  SuckInfo.forEach(movies.renderSuck);
+
+},
+
+renderForties: function (Forties, index, array) {
+  Forties.idx = index;
+  var compiledForties = _.template(templates.movieData);
+  $('.witty').append(compiledForties(Forties));
+
+
+},
+
+renderAllForties: function (FortiesInfo) {
+  FortiesInfo.forEach(movies.renderForties);
+
+},
+
+renderHappy: function (happySince12, index, array) {
+  happySince12.idx = index;
+  var compiledHappy = _.template(templates.movieData);
+  $('.happySince12').append(compiledHappy(happySince12));
+
+},
+
+renderAllHappy: function (HappyInfo) {
+HappyInfo.forEach(movies.renderHappy);
+
+},
+
+rendermaid: function (maid, index, array) {
+  maid.idx = index;
+  var compiledMaid = _.template(templates.movieData);
+  $('.hotelMaid').append(compiledMaid(maid));
+
+},
+
+renderAllmaid: function (maidInfo) {
+  maidInfo.forEach(movies.rendermaid);
+
+},
+
+renderVDay: function (vDay, index, array) {
+  vDay.idx = index;
+  var compiledVDay = _.template(templates.movieData);
+  $('.vDay').append(compiledVDay(vDay));
+
+},
+
+renderAllVDay: function (vDayInfo) {
+  vDayInfo.forEach(movies.renderVDay);
+
+},
+
+renderDeadDog: function (deadDog, index, array) {
+  deadDog.idx = index;
+  var compiledDeadDog = _.template(templates.movieData);
+  $('.dog').append(compiledDeadDog(deadDog));
+
+},
+
+renderAllDeadDog: function (deadDogInfo) {
+  deadDogInfo.forEach(movies.renderDeadDog);
+
+},
+
+renderBitter: function (bitter, index, array) {
+  bitter.idx = index;
+  var compiledBitter = _.template(templates.movieData);
+  $('.bitter').append(compiledBitter(bitter));
+
+},
+
+renderAllBitter: function (bitterInfo) {
+  bitterInfo.forEach(movies.renderBitter);
+
+},
+
+renderRudy: function (Rudy, index, array) {
+  Rudy.idx = index;
+  var compiledRudy = _.template(templates.movieData);
+  $('.rudySacks').append(compiledRudy(Rudy));
+
+},
+
+renderAllRudy: function (RudyInfo) {
+  RudyInfo.forEach(movies.renderRudy);
+
+},
+
+renderBitter: function (bitter, index, array) {
+  bitter.idx = index;
+  var compiledBitter = _.template(templates.movieData);
+  $('.bitter').append(compiledBitter(bitter));
+
+},
+
+renderAllBitter: function (bitterInfo) {
+  bitterInfo.forEach(movies.renderBitter);
+
+},
+
+renderTheme: function (Theme, index, array) {
+  Theme.idx = index;
+  var compiledTheme = _.template(templates.movieData);
+  $('.themeMusic').append(compiledTheme(Theme));
+
+},
+
+renderAllTheme: function (ThemeInfo) {
+  ThemeInfo.forEach(movies.renderTheme);
+
+},
+
+renderAsshole: function (asshole, index, array) {
+  asshole.idx = index;
+  var compiledAsshole = _.template(templates.movieData);
+  $('.assholeMakeHistory').append(compiledAsshole(asshole));
+
+},
+
+renderAllAsshole: function (AssholeInfo) {
+  AssholeInfo.forEach(movies.renderAsshole);
+
+},
+
+renderPrison: function (Prison, index, array) {
+  Prison.idx = index;
+  var compiledPrison = _.template(templates.movieData);
+  $('.survivePrison').append(compiledPrison(Prison));
+
+},
+
+renderAllPrison: function (PrisonInfo) {
+  PrisonInfo.forEach(movies.renderPrison);
+
+},
+
+renderGenius: function (genius, index, array) {
+  genius.idx = index;
+  var compiledGenius = _.template(templates.movieData);
+  $('.genius').append(compiledGenius(genius));
+
+},
+
+renderAllGenius: function (GeniusInfo) {
+  GeniusInfo.forEach(movies.renderGenius);
+
+},
+
+renderNazi: function (nazi, index, array) {
+  nazi.idx = index;
+  var compiledNazi = _.template(templates.movieData);
+  $('.nazi').append(compiledNazi(nazi));
+
+},
+
+renderAllNazi: function (NaziInfo) {
+  NaziInfo.forEach(movies.renderNazi);
+
 }
-
-
 };
 
 
