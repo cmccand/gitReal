@@ -1,3 +1,14 @@
+body, h1, h2, h3, h4, h5, p, a {
+  margin: 0;
+  padding: 0; }
+
+ul {
+  list-style-type: none;
+  display: inline-block; }
+
+li {
+  display: block; }
+
 video.bgvid {
   position: fixed;
   right: 0;
@@ -43,6 +54,21 @@ section {
     background-color: #e8e8e8;
     color: black; }
 
+.results.active {
+  width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between; }
+
+.resultBox {
+  display: inline-block;
+  width: 30%;
+  vertical-align: top; }
+  .resultBox img {
+    width: 300px;
+    height: 450px;
+    border-radius: 5px; }
+
 .animate {
   -webkit-animation-name: animation;
   -webkit-animation-duration: 4s;
@@ -69,6 +95,9 @@ div {
 
 .active {
   display: block; }
+
+.resultBox.active {
+  display: inline-block; }
 
 @media screen and (max-device-width: 800px) {
   html {
