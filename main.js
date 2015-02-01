@@ -2,6 +2,7 @@ var movies = {
   init: function (){
     movies.renderAllAlien(alien);
     movies.renderAllDysfunct(dysfunct);
+    movies.renderAllMustFind(mustFind);
 
   },
 
@@ -35,6 +36,18 @@ renderDysfunct: function (dysfunct, index, array) {
 renderAllDysfunct: function (dysfunctInfo) {
   dysfunctInfo.forEach(movies.renderDysfunct);
 
+},
+
+renderMustFind: function (mustFind, index, array) {
+  mustFind.idx = index;
+  var compiledMustFind = _.template(templates.movieData);
+  $('.row').append(compiledMustFind(mustFind));
+
+
+},
+
+renderAllMustFind: function (MustFindInfo) {
+  MustFindInfo.forEach(movies.renderMustFind);
 
 }
 
