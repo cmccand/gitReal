@@ -22,6 +22,8 @@ var movies = {
     movies.renderAllPrison(Prison);
     movies.renderAllGenius(genius);
     movies.renderAllNazi(nazi);
+    movies.renderAllSplatter(splatter);
+    movies.renderAllHurt(hurt);
   },
 
   renderAlien: function (alien, index, array) {
@@ -309,7 +311,34 @@ renderNazi: function (nazi, index, array) {
 renderAllNazi: function (NaziInfo) {
   NaziInfo.forEach(movies.renderNazi);
 
+},
+
+renderSplatter: function (splatter, index, array) {
+  splatter.idx = index;
+  var compiledSplatter = _.template(templates.movieData);
+  $('.splatter').append(compiledSplatter(splatter));
+
+},
+
+renderAllSplatter: function (SplatterInfo) {
+  SplatterInfo.forEach(movies.renderSplatter);
+
+},
+
+renderHurt: function (hurt, index, array) {
+  hurt.idx = index;
+  var compiledHurt = _.template(templates.movieData);
+  $('.hurtYourself').append(compiledHurt(hurt));
+
+},
+
+renderAllHurt: function (HurtInfo) {
+  HurtInfo.forEach(movies.renderHurt);
+
 }
+
+
+
 };
 
 

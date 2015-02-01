@@ -1604,9 +1604,9 @@ var nazi = [
   "Response": "True"
 }
 ];
-/*
-//
+
 //   Creative
+var splatter = [
 {
   "Title": "Pollock",
   "Year": "2000",
@@ -1672,9 +1672,11 @@ var nazi = [
   "imdbID": "tt0335119",
   "Type": "movie",
   "Response": "True"
-},
-//
+}
+];
+
 //   You’re not really creative unless you hurt yourself
+var hurt = [
 {
   "Title": "Lust for Life",
   "Year": "1956",
@@ -1740,10 +1742,9 @@ var nazi = [
   "imdbID": "tt0103190",
   "Type": "movie",
   "Response": "True"
-},
+}
 ];
-//
-//
+/*
 //   Dark
 //
 //   Cynical
