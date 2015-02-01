@@ -3,7 +3,7 @@ section {
   width: 980px;
   margin: auto;
   display: none;
-  .mood, .subMood {
+  .mood {
     display: block;
     text-align: center;
     margin-top: 40%;
@@ -12,8 +12,13 @@ section {
     @extend .mood;
     margin-top: -2%;
     }
+    .subMood {
+      @extend .mood;
+      margin-top: -72px;
+      }
+    }
 
-}
+
 
 .animate
 {
