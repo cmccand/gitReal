@@ -55,8 +55,6 @@ section {
 }
 
 
-
-
 .results.active {
   width: 1200px;
   margin: 11% auto;
@@ -75,8 +73,8 @@ section {
     border-radius: 5px;
     @include sepia(sepia(1));
     @include shadow(9px 10px 9px 0px rgba(0,0,0,0.75));
+    }
   }
-}
 
 
 .animate {

@@ -4,6 +4,7 @@ templates.movieData = [
 
 '<div class="resultBox active">',
 '<img src=<%= Poster %> />',
+'<div class="resultText">',
 '<h1><%= Title %></h1>',
 '<p><%= Year %></p>',
 '<p><%= Genre %></p>',
@@ -11,6 +12,7 @@ templates.movieData = [
 '<p><%= Runtime %></p>',
 '<p><%= Director %></p>',
 '<p><%= Plot %></p>',
+'</div>',
 '</div>'
 
 
