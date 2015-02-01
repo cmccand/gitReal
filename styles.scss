@@ -81,7 +81,7 @@ section {
 
 .results.active {
   width: 1200px;
-  margin: auto;
+  margin: 11% auto;
   display: flex;
   justify-content: space-between;
 
@@ -150,6 +150,7 @@ div{
 
 .resultBox.active{
   display: inline-block;
+  padding: 20px;
 }
 
 @media screen and (max-device-width: 800px) {

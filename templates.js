@@ -11,7 +11,8 @@ templates.movieData = [
 '<p><%= Runtime %></p>',
 '<p><%= Director %></p>',
 '<p><%= Plot %></p>',
-'</div>',
+'<a href=<%= Watch %>>Watch</a>',
+'</div>'
 
 
 ].join('');

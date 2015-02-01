@@ -21,7 +21,8 @@ var alien = [
 "imdbVotes":"743,277",
 "imdbID":"tt0499549",
 "Type":"movie",
-"Response":"True",
+"Watch":"http://www.amazon.com/Avatar-Sam-Worthington/dp/B003EVWDR0/ref=sr_1_1?s=instant-video&ie=UTF8&qid=1422817504&sr=1-1&keywords=avatar&pebp=1422817511025&peasin=B003EVWDR0",
+"Response":"True"
 },
 
 
@@ -397,28 +398,6 @@ var cancer = [
   "imdbRating": "8.2",
   "imdbVotes": "530,572",
   "imdbID": "tt0266543",
-  "Type": "movie",
-  "Response": "True"
-},
-{
-  "Title": "Life Is Beautiful",
-  "Year": "1997",
-  "Rated": "PG-13",
-  "Released": "12 Feb 1999",
-  "Runtime": "116 min",
-  "Genre": "Comedy, Drama, Romance",
-  "Director": "Roberto Benigni",
-  "Writer": "Vincenzo Cerami (story), Roberto Benigni (story)",
-  "Actors": "Roberto Benigni, Nicoletta Braschi, Giorgio Cantarini, Giustino Durano",
-  "Plot": "A Jewish man has a wonderful romance with the help of his humour, but must use that same quality to protect his son in a Nazi concentration camp.",
-  "Language": "Italian, German, English",
-  "Country": "Italy",
-  "Awards": "Won 3 Oscars. Another 61 wins & 39 nominations.",
-  "Poster": "http://ia.media-imdb.com/images/M/MV5BMTQwMTM2MjE4Ml5BMl5BanBnXkFtZTgwODQ2NTYxMTE@._V1_SX300.jpg",
-  "Metascore": "59",
-  "imdbRating": "8.6",
-  "imdbVotes": "314,621",
-  "imdbID": "tt0118799",
   "Type": "movie",
   "Response": "True"
 },
@@ -1228,28 +1207,7 @@ var Rudy = [
   "Type": "movie",
   "Response": "True"
 },
-{
-  "Title": "The Mighty Ducks",
-  "Year": "1992",
-  "Rated": "PG",
-  "Released": "02 Oct 1992",
-  "Runtime": "100 min",
-  "Genre": "Action, Comedy, Drama",
-  "Director": "Stephen Herek",
-  "Writer": "Steven Brill",
-  "Actors": "Emilio Estevez, Joss Ackland, Lane Smith, Heidi Kling",
-  "Plot": "A self-centered lawyer is sentenced to community service coaching a rag tag youth hockey team.",
-  "Language": "English",
-  "Country": "USA",
-  "Awards": "2 nominations.",
-  "Poster": "http://ia.media-imdb.com/images/M/MV5BMTIzMzgxOTQwMV5BMl5BanBnXkFtZTcwMzkzNDYyMQ@@._V1_SX300.jpg",
-  "Metascore": "N/A",
-  "imdbRating": "6.4",
-  "imdbVotes": "37,974",
-  "imdbID": "tt0104868",
-  "Type": "movie",
-  "Response": "True"
-}
+
 ];
 
 //   The theme music alone will make you feel invincible
@@ -1275,6 +1233,7 @@ var Theme = [
   "imdbID": "tt0075148",
   "Type": "movie",
   "Response": "True"
+
 },
 {
   "Title": "Hoosiers",
