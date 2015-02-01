@@ -11,16 +11,29 @@ section {
 
 .animate {
   -webkit-animation-name: animation;
-  -webkit-animation-duration: 5s;
+  -webkit-animation-duration: 4s;
   -webkit-opacity: 0; }
 
 @-webkit-keyframes animation {
   0% {
-    opacity: 100; }
+    opacity: 100;
+    -webkit-transform: rotate(20deg); }
 
   100% {
     opacity: 0;
-    transform: translateY(1000px); } }
+    transform: translateY(1000px);
+    display: none; } }
+
+.chosenOne {
+  -webkit-animation-name: rise;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-fill-mode: forwards; }
+
+@-webkit-keyframes rise {
+
+  100% {
+    color: white;
+    -webkit-transform: translateY(-380px); } }
 
 div {
   display: none; }
