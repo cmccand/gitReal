@@ -333,25 +333,56 @@ $(document).ready(function(){
 
   });
 
-  // $('.genre').on('click', 'button', function (event) {
-  //   event.preventDefault();
-  //
-  //   $(this).siblings().removeClass('active');
-  //   $(this).parent('section').removeClass('active');
-  //   $(this).removeClass('active');
-  //   $(this).parent().siblings('.results').addClass('active');
-  //
-  // });
+  $('.subMood').on('click', 'button', function(event) {
+    event.preventDefault();
+    $('.mood .chosenOne').fadeOut('slow');
 
+  });
 
-  // $('.results').on('click', 'button', function (event) {
-  //   event.preventDefault();
-  //
-  //   $(this).siblings().removeClass('active');
-  //   $(this).parent('genre').removeClass('active');
-  //   $(this).removeClass('active');
-  //   $(this).parent().siblings('.aliensResult').addClass('active');
+  // var vid = (".bgvid");
+  // var pauseButton = (".vidpause");
+  // function vidFade() {
+  //   vid.classList.add("stopfade");
+  // }
+  // vid.on('ended', function() {
+  //   // only functional if "loop" is removed
+  //   vid.pause();
+  //   // to capture IE10
+  //   vidFade();
   // });
+  // pauseButton.on("click", function() {
+  //   vid.classList.toggle("stopfade");
+  //   if (vid.paused) {
+  //     vid.play();
+  //     pauseButton.innerHTML = "Pause";
+  //   } else {
+  //     vid.pause();
+  //     pauseButton.innerHTML = "Paused";
+  //   }
+  // })
   //
 
 });
+
+
+
+// $('.genre').on('click', 'button', function (event) {
+//   event.preventDefault();
+//
+//   $(this).siblings().removeClass('active');
+//   $(this).parent('section').removeClass('active');
+//   $(this).removeClass('active');
+//   $(this).parent().siblings('.results').addClass('active');
+//
+// });
+
+
+// $('.results').on('click', 'button', function (event) {
+//   event.preventDefault();
+//
+//   $(this).siblings().removeClass('active');
+//   $(this).parent('genre').removeClass('active');
+//   $(this).removeClass('active');
+//   $(this).parent().siblings('.aliensResult').addClass('active');
+// });
+//
