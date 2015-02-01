@@ -4,6 +4,7 @@ var movies = {
     movies.renderAllDysfunct(dysfunct);
     movies.renderAllMustFind(mustFind);
     movies.renderAllDogs(Dog);
+    movies.renderAllBelieve(Believe);
 
   },
 
@@ -53,7 +54,7 @@ renderAllMustFind: function (MustFindInfo) {
 renderDog: function (Dog, index, array) {
   Dog.idx = index;
   var compiledDog = _.template(templates.movieData);
-  $('.row').append(compiledDog(Dog));
+  $('.dogEscapes').append(compiledDog(Dog));
 
 
 },
@@ -66,7 +67,7 @@ renderAllDogs: function (DogInfo) {
 renderBelieve: function (Believe, index, array) {
   Believe.idx = index;
   var compiledBelieve = _.template(templates.movieData);
-  $('.row').append(compiledBelieve(Believe));
+  $('.justBelieve').append(compiledBelieve(Believe));
 
 
 },

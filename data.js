@@ -285,7 +285,7 @@ var Dog = [
 //Optimistic
 //Everything in your life will work out great if you just believe
 
-var believe = [
+var Believe = [
 {
   "Title": "Angels in the Outfield",
   "Year": "1994",
@@ -353,8 +353,9 @@ var believe = [
   "Response": "True"
 }
 ];
-/*
+
 //At least you don’t have cancer
+var cancer = [
 {
   "Title": "Forrest Gump",
   "Year": "1994",
@@ -422,6 +423,7 @@ var believe = [
   "Response": "True"
 },
 
+
 {
   "Title": "Brian's Song",
   "Year": "1971",
@@ -444,7 +446,8 @@ var believe = [
   "Type": "movie",
   "Response": "True"
 },
-
+];
+/*
 //Campy
 //Fake blood and bad makeup  - the 80s edition
 {
