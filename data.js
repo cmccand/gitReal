@@ -445,11 +445,12 @@ var cancer = [
   "imdbID": "tt0068315",
   "Type": "movie",
   "Response": "True"
-},
+}
 ];
-/*
+
 //Campy
 //Fake blood and bad makeup  - the 80s edition
+var Fakeblood = [
 {
   "Title": "Surf Nazis Must Die",
   "Year": "1987",
@@ -515,10 +516,12 @@ var cancer = [
   "imdbID": "tt0083907",
   "Type": "movie",
   "Response": "True"
-},
+}
+];
 
 //You can never have too much purple
 
+var Purple = [
 {
   "Title": "The Grand Budapest Hotel",
   "Year": "2014",
@@ -584,13 +587,13 @@ var cancer = [
   "imdbID": "tt0401792",
   "Type": "movie",
   "Response": "True"
-},
+}
 ];
 
 // Lonely
 // Drunk
 // If you drink enough you’ll probably become a famous writer
-
+var Drunk = [
 {
   "Title": "Factotum",
   "Year": "2005",
@@ -656,7 +659,10 @@ var cancer = [
   "imdbID": "tt0118715",
   "Type": "movie",
   "Response": "True"
-},
+}
+];
+
+/*
 
 // Maybe you’re lonely because you suck
 {

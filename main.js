@@ -5,6 +5,10 @@ var movies = {
     movies.renderAllMustFind(mustFind);
     movies.renderAllDogs(Dog);
     movies.renderAllBelieve(Believe);
+    movies.renderAllCancer(cancer);
+    movies.renderAllFakeblood(Fakeblood);
+    movies.renderAllPurple(Purple);
+    movies.renderAllDrunk(Drunk);
 
   },
 
@@ -28,7 +32,6 @@ renderDysfunct: function (dysfunct, index, array) {
   dysfunct.idx = index;
   var compiledDysfunct = _.template(templates.movieData);
   $('.dysfunctional').append(compiledDysfunct(dysfunct));
-
 
 
 },
@@ -77,7 +80,56 @@ renderAllBelieve: function (BelieveInfo) {
 
 },
 
+renderCancer: function (cancer, index, array) {
+  cancer.idx = index;
+  var compiledCancer = _.template(templates.movieData);
+  $('.cancer').append(compiledCancer(cancer));
 
+
+},
+
+renderAllCancer: function (CancerInfo) {
+  CancerInfo.forEach(movies.renderCancer);
+
+},
+
+renderFakeblood: function (Fakeblood, index, array) {
+  Fakeblood.idx = index;
+  var compiledFakeblood = _.template(templates.movieData);
+  $('.fakeBlood').append(compiledFakeblood(Fakeblood));
+
+
+},
+
+renderAllFakeblood: function (FakebloodInfo) {
+  FakebloodInfo.forEach(movies.renderFakeblood);
+
+},
+
+renderPurple: function (Purple, index, array) {
+  Purple.idx = index;
+  var compiledPurple = _.template(templates.movieData);
+  $('.purple').append(compiledPurple(Purple));
+
+},
+
+renderAllPurple: function (PurpleInfo) {
+  PurpleInfo.forEach(movies.renderPurple);
+
+},
+
+renderDrunk: function (Drunk, index, array) {
+  Drunk.idx = index;
+  var compiledDrunk = _.template(templates.Drunk);
+  $('.famousWriter').append(compiledDrunk(Drunk));
+
+
+},
+
+renderAllDrunk: function (DrunkInfo) {
+  DrunkInfo.forEach(movies.renderDrunk);
+
+}
 
 
 };
