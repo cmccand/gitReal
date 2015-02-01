@@ -1,8 +1,3 @@
-@mixin transition ($transition) {
-  -webkit-transition: $transition;
-  -moz-transition: $transition;
-  transition: $transition;
-}
 
 
 body, h1, h2, h3, h4, h5, p, a {
@@ -19,7 +14,8 @@ li {
   display: block;
 }
 
-  video.bgvid {
+//BACKGROUND
+video.bgvid {
     position: fixed;
     right: 0;
     bottom: 0;
@@ -29,11 +25,12 @@ li {
     height: auto;
     z-index: -100;
     opacity: 0.5;
+    @include sepia(sepia(0.5));
     background-repeat: no-repeat;
     background-size: cover;
   }
 
-
+//SECTIONS
 section {
   width: 980px;
   margin: auto;
@@ -53,31 +50,12 @@ section {
       }
     }
 
-
-.chosenOne
-    {
-
-      -webkit-animation-name: rise;
-      -webkit-animation-duration:2s;
-      -webkit-animation-fill-mode: forwards;
-
-    }
-
-.moodbtn {
-  width: 200px;
-  height: 300px;
-  background-color: #e8e8e8;
-  color: black;
-  border: 5px solid black;
-  border-radius: 10px;
-  &:hover {
-    border: 5px solid #5ec494;
-/*     @include transition( 1s ease);
- */    background-color: #e8e8e8;
-    color: black;
-
-  }
+.chosenOne {
+  @include chosen(rise 2s forwards);
 }
+
+
+
 
 .results.active {
   width: 1200px;
@@ -95,20 +73,37 @@ section {
     width: 300px;
     height: 450px;
     border-radius: 5px;
-    -webkit-filter: sepia(1);
-    filter: sepia(1);
+    @include sepia(sepia(1));
+    @include shadow(9px 10px 9px 0px rgba(0,0,0,0.75));
   }
 }
 
 
-.animate
-{
-  -webkit-animation-name: animation;
-  -webkit-animation-duration: 4s;
-  -webkit-opacity:0;
-
+.animate {
+  @include animateDown(animation 4s);
+  opacity:0;
 }
 
+
+//BUTTONS
+.moodbtn {
+  width: 200px;
+  height: 300px;
+  background-color: #e8e8e8;
+  color: black;
+  border: 5px solid black;
+  border-radius: 10px;
+  &:hover {
+    border: 5px solid #5ec494;
+    @include transition( 1s ease);
+    background-color: #e8e8e8;
+    color: black;
+
+  }
+}
+
+
+//KEYFRAMES
 @-webkit-keyframes animation{
   0%{
     opacity:100;
@@ -123,12 +118,6 @@ section {
 }
 
 
-
-
-
-
-
-
 @-webkit-keyframes rise{
   0%{
   }
@@ -140,7 +129,7 @@ section {
 }
 
 
-
+//JQUERY
 
 div{
   display: none;
@@ -155,6 +144,8 @@ div{
   padding: 20px;
 }
 
+
+//MEDIA QUERIES FOR BACKGROUND
 @media screen and (max-device-width: 800px) {
   html { background: url(polina.jpg) #000 no-repeat center center fixed; }
   #bgvid { display: none; }
