@@ -6,6 +6,7 @@ templates.movieData = [
 '<img src=<%= Poster %> />',
 '<div class="resultText">',
 '<h1><%= Title %></h1>',
+'<img src=<%= Poster %> />',
 '<p><%= Year %></p>',
 '<p><%= Genre %></p>',
 '<p><%= Rated %></p>',

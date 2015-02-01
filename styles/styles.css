@@ -9,6 +9,42 @@ ul {
 li {
   display: block; }
 
+header {
+  width: 100%;
+  text-align: center;
+  padding-top: 40px; }
+
+h1 {
+  font-family: 'Zorus_Serif', 'viva-std', serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 6em;
+  letter-spacing: 10px;
+  text-align: center;
+  color: #1c1c1c; }
+
+h3 {
+  text-align: center;
+  color: #514f4f;
+  font-family: 'PT Sans', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin: 20px 0 0 0;
+  position: relative;
+  letter-spacing: 6px; }
+  h3:before, h3:after {
+    content: " ";
+    position: absolute;
+    width: 50px;
+    height: 5px;
+    border-top: 1px solid #222222;
+    border-bottom: 1px solid #222222; }
+  h3:before {
+    margin: 5px 0 0 -60px; }
+  h3:after {
+    margin: 5px 0 0 1px; }
+
 video.bgvid {
   position: fixed;
   right: 0;
@@ -18,10 +54,10 @@ video.bgvid {
   width: auto;
   height: auto;
   z-index: -100;
-  opacity: 0.5;
-  filter: sepia(0.5);
-  -webkit-filter: sepia(0.5);
-  -moz-filter: sepia(0.5);
+  opacity: 0.8;
+  filter: sepia(0.8);
+  -webkit-filter: sepia(0.8);
+  -moz-filter: sepia(0.8);
   background-repeat: no-repeat;
   background-size: cover; }
 
@@ -32,7 +68,7 @@ section {
   section .mood, section .genre, section .subMood {
     display: block;
     text-align: center;
-    margin-top: 40%; }
+    margin-top: 20%; }
   section .genre {
     margin-top: -6%; }
   section .subMood {
@@ -47,19 +83,16 @@ section {
   width: 1200px;
   margin: 11% auto;
   display: flex;
-  justify-content: space-between; }
+  justify-content: center; }
 
 .resultBox {
   display: inline-block;
-  width: 30%;
+  width: 29%;
   vertical-align: top; }
   .resultBox img {
     width: 300px;
     height: 450px;
     border-radius: 5px;
-    filter: sepia(1);
-    -webkit-filter: sepia(1);
-    -moz-filter: sepia(1);
     -webkit-box-shadow: 9px 10px 9px 0px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 9px 10px 9px 0px rgba(0, 0, 0, 0.75);
     box-shadow: 9px 10px 9px 0px rgba(0, 0, 0, 0.75); }
@@ -71,14 +104,20 @@ section {
   opacity: 0; }
 
 .moodbtn {
-  width: 200px;
-  height: 300px;
-  background-color: #e8e8e8;
+  text-align: center;
+  margin: 20px auto;
+  font-family: 'PT Sans', Courier;
+  font-size: 30px;
+  text-transform: uppercase;
   color: black;
-  border: 5px solid black;
+  text-shadow: -3px 0px 0px #eee, 5px 1px 0px #707070;
+  width: 242px;
+  height: 120px;
+  background-color: #e8e8e8;
+  border: 3px solid #707070;
   border-radius: 10px; }
   .moodbtn:hover {
-    border: 5px solid #5ec494;
+    border: 3px solid #5ec494;
     -webkit-transition: 1s ease;
     -moz-transition: 1s ease;
     transition: 1s ease;

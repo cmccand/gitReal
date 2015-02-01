@@ -14,6 +14,51 @@ li {
   display: block;
 }
 
+header{
+  width: 100%;
+  text-align: center;
+  padding-top: 40px;
+  };
+
+h1 {
+  font-family: 'Zorus_Serif', 'viva-std', serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 6em;
+  letter-spacing: 10px;
+  text-align: center;
+  color: $h1-font-color;
+}
+
+h3 {
+  text-align: center;
+  color: $subHead-font-color;
+  font-family: 'PT Sans', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin: 20px 0 0 0;
+  position: relative;
+  letter-spacing: 6px;
+  &:before, &:after {
+    content: " ";
+    position: absolute;
+    width: 50px;
+    height: 5px;
+    border-top: 1px solid #222222;
+    border-bottom: 1px solid #222222;
+  }
+    &:before {
+    margin: 5px 0 0 -60px;
+    }
+    &:after{
+    margin: 5px 0 0 1px;
+
+  }
+}
+
+
+
 //BACKGROUND
 video.bgvid {
     position: fixed;
@@ -24,8 +69,8 @@ video.bgvid {
     width: auto;
     height: auto;
     z-index: -100;
-    opacity: 0.5;
-    @include sepia(sepia(0.5));
+    opacity: 0.8;
+    @include sepia(sepia(0.8));
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -38,7 +83,7 @@ section {
   .mood {
     display: block;
     text-align: center;
-    margin-top: 40%;
+    margin-top: 20%;
   }
   .genre {
     @extend .mood;
@@ -59,19 +104,18 @@ section {
   width: 1200px;
   margin: 11% auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 
 }
 
 .resultBox {
   display: inline-block;
-  width: 30%;
+  width: 29%;
   vertical-align: top;
   img {
     width: 300px;
     height: 450px;
     border-radius: 5px;
-    @include sepia(sepia(1));
     @include shadow(9px 10px 9px 0px rgba(0,0,0,0.75));
     }
   }
@@ -85,14 +129,20 @@ section {
 
 //BUTTONS
 .moodbtn {
-  width: 200px;
-  height: 300px;
-  background-color: #e8e8e8;
+  text-align: center;
+  margin: 20px auto;
+  font-family: 'PT Sans', Courier;
+  font-size: 30px;
+  text-transform: uppercase;
   color: black;
-  border: 5px solid black;
+  text-shadow: -3px 0px 0px #eee, 5px 1px 0px #707070;
+  width: 242px;
+  height: 120px;
+  background-color: #e8e8e8;
+  border: 3px solid #707070;
   border-radius: 10px;
   &:hover {
-    border: 5px solid #5ec494;
+    border: 3px solid #5ec494;
     @include transition( 1s ease);
     background-color: #e8e8e8;
     color: black;
