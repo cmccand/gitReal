@@ -8,6 +8,8 @@ section {
     margin-top: 40%; }
   section .genre {
     margin-top: -2%; }
+  section .subMood {
+    margin-top: -72px; }
 
 .animate {
   -webkit-animation-name: animation;
