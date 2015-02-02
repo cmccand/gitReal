@@ -31,6 +31,7 @@ var movies = {
     movies.renderAllIncest(incest);
     movies.renderAllDeadDog2(deadDog2);
     movies.renderAllScarred(scarred);
+    movies.renderAllFoodSex(foodSex);
   },
 
   renderAlien: function (alien, index, array) {
@@ -425,6 +426,17 @@ renderScarred: function (scarred, index, array) {
 
 renderAllScarred: function (ScarredInfo) {
   ScarredInfo.forEach(movies.renderScarred);
+
+},
+renderFoodSex: function (foodSex, index, array) {
+  foodSex.idx = index;
+  var compiledfoodSex = _.template(templates.movieData);
+  $('.foodSex').append(compiledfoodSex(foodSex));
+
+},
+
+renderAllFoodSex: function (foodSexInfo) {
+  foodSexInfo.forEach(movies.renderFoodSex);
 
 }
 
