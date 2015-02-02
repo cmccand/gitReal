@@ -37,6 +37,7 @@ h2 {
   text-align: left;
   margin-top: -55px;
   margin-bottom: 41px;
+  margin-left: 20%;
 
 }
 
@@ -100,17 +101,16 @@ video.bgvid {
 
 //SECTIONS
 section {
-  width: 980px;
   margin: auto;
   display: none;
   .mood {
     display: block;
     text-align: center;
-    margin-top: 30%;
+    margin-top: 15%;
   }
   .genre {
     @extend .mood;
-    margin-top: -6%;
+    margin-top: -8%;
     }
     .subMood {
       @extend .mood;
@@ -120,14 +120,46 @@ section {
 
 .chosenOne {
   @include chosen(rise 2s forwards);
+
 }
 
 
 .results.active {
   width: 1200px;
   margin: 4% auto;
-  display: flex;
+  display: block;
   justify-content: center;
+  h2{
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 0;
+    &:before, &:after {
+      content: " ";
+      position: absolute;
+      width: 50px;
+      height: 5px;
+      border-top: 1px solid #222222;
+      border-bottom: 1px solid #222222;
+    }
+    &:before {
+      margin: 5px 0 0 -60px;
+    }
+    &:after{
+      margin: 5px 0 0 10px;
+
+    }
+  }
+  h3 {
+    &:before, &:after {
+      width: 87px;
+    }
+    &:before {
+      margin: 5px 0 0 -111px;
+    }
+    &:after{
+      margin: 5px 0 0 17px;
+    }
+  }
 
 }
 
@@ -146,78 +178,31 @@ section {
   }
 
 
-
-/* span.resultText{
-  background: rgba(0,0,0,0.5);
-  color: white;
-  cursor: pointer;
-  display: table;
-  height: 150px;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 150px;
-  opacity: 0;
-}
-
-
-span.resultText span {
-  display: table-cell;
-  text-align: center;
-  vertical-align: middle;
-}
-.resultBox img:hover span.resultText {
-  opacity: 1;
-}
-
- */
-
-
- /* img:hover .resultText {
-  display:block;
-  position:absolute;
-  width:100%;
-  float:left;
-  text-align:center;
- }
- */
-
-/*  &:hover {
-  opacity: 0.2;
-  .resultText {
-    display:block;
-    position:absolute;
-    width:100%;
-    float:left;
-    text-align:center;
-  }
-}
-*/
 .animate {
   @include animateDown(animation 4s);
   opacity:0;
+  transform: translateY(1000px);
 }
 
 
 //BUTTONS
 .moodbtn {
   text-align: center;
-  margin: 20px auto;
+  margin: 10px;
   font-family: 'PT Sans', Courier;
   font-size: 36px;
   text-transform: uppercase;
   color: black;
   text-shadow: 1px 0px 0px #eee, 4px 2px 0px #707070;
-  width: 242px;
-  height: 120px;
+  padding: 30px 40px 30px 40px;
   background: linear-gradient(rgba(255,255,244,0.5), rgba(255,255,244,0.5));
-  border: 3px solid #707070;
-  border-radius: 10px;
+  border: 8px double #707070;
   &:hover {
-    border: 3px solid #5ec494;
-    @include transition( 1s ease);
-    background-color: #e8e8e8;
+    border: 8px double black;
+    background: linear-gradient(rgba(112,112,112,0.5), rgba(112,112,112,0.5));
     color: black;
+    @include transition(all 2s ease);
+
 
   }
 }
@@ -243,8 +228,8 @@ span.resultText span {
   }
   100%
   {
-    color:white;
-    -webkit-transform: translateY(-380px);
+    -webkit-transform: translateY(-250px);
+    opacity:0;
   }
 }
 

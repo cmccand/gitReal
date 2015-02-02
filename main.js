@@ -443,7 +443,8 @@ $(document).ready(function(){
   $('section div').on('click', 'button', function(event){
     event.preventDefault();
     var relatedMood = '.' + $(this).attr('rel');
-    $(this).siblings().addClass('animate');
+    $(this).siblings('button').addClass('animate');
+    $(this).siblings('h2').fadeOut('slow');
     $(this).addClass('chosenOne');
     $(relatedMood).addClass('active');
     $(relatedMood).parent('div').addClass('active');
@@ -457,6 +458,10 @@ $(document).ready(function(){
     $('.mood .chosenOne').fadeOut('slow');
 
   });
+
+$('.subMood h2').hide();
+
+
 
   // var vid = (".bgvid");
   // var pauseButton = (".vidpause");
