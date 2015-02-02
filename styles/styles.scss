@@ -17,7 +17,7 @@ header{
   width: 100%;
   text-align: center;
   padding-top: 40px;
-  };
+};
 
 h1 {
   font-family: 'Zorus_Serif', 'viva-std', serif;
@@ -66,10 +66,10 @@ h3 {
     border-top: 1px solid #222222;
     border-bottom: 1px solid #222222;
   }
-    &:before {
+  &:before {
     margin: 5px 0 0 -60px;
-    }
-    &:after{
+  }
+  &:after{
     margin: 5px 0 0 1px;
 
   }
@@ -85,19 +85,19 @@ p {
 
 //BACKGROUND
 video.bgvid {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: -100;
-    opacity: 0.8;
-    @include sepia(sepia(0.8));
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  opacity: 0.8;
+  @include sepia(sepia(0.8));
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 //SECTIONS
 section {
@@ -111,12 +111,12 @@ section {
   .genre {
     @extend .mood;
     margin-top: -8%;
-    }
-    .subMood {
-      @extend .mood;
-      margin-top: -181px;
-      }
-    }
+  }
+  .subMood {
+    @extend .mood;
+    margin-top: -181px;
+  }
+}
 
 .chosenOne {
   @include chosen(rise 2s forwards);
@@ -175,58 +175,8 @@ section {
     @include shadow(9px 10px 9px 0px rgba(0,0,0,0.75));
     position:relative;
   }
-  }
-
-/* span.resultText{
-  background: rgba(0,0,0,0.5);
-  color: white;
-  cursor: pointer;
-  display: table;
-  height: 150px;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 150px;
-  opacity: 0;
 }
 
-
-span.resultText span {
-  display: table-cell;
-  text-align: center;
-  vertical-align: middle;
-}
-.resultBox img:hover span.resultText {
-  opacity: 1;
-}
-
- */
-
-
- /* img:hover .resultText {
-  display:block;
-  position:absolute;
-  width:100%;
-  float:left;
-  text-align:center;
- }
- */
-
-/*  &:hover {
-  opacity: 0.2;
-  .resultText {
-    display:block;
-    position:absolute;
-    width:100%;
-    bottom:0;
-    left:0;
-    }
-
-    float:left;
-    text-align:center;
-  }
-}
-*/
 
 .animate {
   @include animateDown(animation 4s);
