@@ -96,15 +96,30 @@ section {
 .resultBox {
   display: inline-block;
   width: 29%;
-  vertical-align: top; }
+  vertical-align: top;
+  overflow: hidden; }
   .resultBox img {
     width: 300px;
     height: 450px;
     border-radius: 5px;
     -webkit-box-shadow: 9px 10px 9px 0px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 9px 10px 9px 0px rgba(0, 0, 0, 0.75);
-    box-shadow: 9px 10px 9px 0px rgba(0, 0, 0, 0.75); }
+    box-shadow: 9px 10px 9px 0px rgba(0, 0, 0, 0.75);
+    position: relative; }
+    .resultBox img:hover {
+      background: rgba(0, 0, 0, 0.75);
+      text-align: center; }
+      .resultBox img:hover .resultText {
+        opacity: 1; }
 
+/* img:hover .resultText {
+  display:block;
+  position:absolute;
+  width:100%;
+  float:left;
+  text-align:center;
+ }
+ */
 .animate {
   animation: animation 4s;
   -webkit-animation: animation 4s;

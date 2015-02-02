@@ -1,5 +1,4 @@
 
-
 body, h1, h2, h3, h4, h5, p, a {
   margin: 0;
   padding: 0;
@@ -123,14 +122,31 @@ section {
   display: inline-block;
   width: 29%;
   vertical-align: top;
+  overflow: hidden;
   img {
     width: 300px;
     height: 450px;
     border-radius: 5px;
     @include shadow(9px 10px 9px 0px rgba(0,0,0,0.75));
+    position:relative;
+  &:hover {
+    background:rgba(0,0,0,.75);
+    text-align:center;
+      .resultText {
+        opacity:1;
+      }
     }
   }
+}
 
+ /* img:hover .resultText {
+  display:block;
+  position:absolute;
+  width:100%;
+  float:left;
+  text-align:center;
+ }
+ */
 
 .animate {
   @include animateDown(animation 4s);
