@@ -3,9 +3,9 @@ var templates = {};
 templates.movieData = [
 
 '<div class="resultBox active">',
-'<img src=<%= Poster %> />'
+'<img src=<%= Poster %> />',
 '<div class="resultText">',
-'<h5><%= Title %></h1>',
+'<h5><%= Title %></h5>',
 '<img src=<%= Poster %> />',
 '<p><%= Year %></p>',
 '<p><%= Genre %></p>',

@@ -103,8 +103,8 @@ section {
     display: block;
     position: absolute;
     width: 100%;
-    float: left;
-    text-align: center; }
+    bottom: 0;
+    left: 0; }
 
 .animate {
   animation: animation 4s;
