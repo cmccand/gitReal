@@ -457,14 +457,17 @@ $(document).ready(function(){
     var relatedMood = '.' + $(this).attr('rel');
     $(this).siblings('button').addClass('animate');
     $(this).siblings('h2').fadeOut('slow');
+    $(this).parent().siblings('h2').fadeOut('slow');
     $(this).addClass('chosenOne');
     $(relatedMood).addClass('active');
     $(relatedMood).addClass('fadein');
     $(relatedMood).parent('div').addClass('active');
     $(relatedMood).parent().siblings().removeClass('active');
-
-
   });
+
+  $('.mood').siblings('.subMood').find('h2').hide();
+  $('.mood').siblings('.genre').find('h2').hide();
+
 
   $('.subMood').on('click', 'button', function(event) {
     event.preventDefault();
@@ -472,7 +475,19 @@ $(document).ready(function(){
 
   });
 
+
   $('.subMood h2').hide();
+
+$('.mood').on('click', 'button', function(event){
+  $('.mood').siblings('.subMood').find('h2').fadeIn('fast');
+
+});
+
+$('.subMood').on('click', 'button', function(event){
+  $('.subMood').siblings('.genre').find('h2').fadeIn('fast');
+
+});
+
 
 
 
