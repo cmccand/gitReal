@@ -31,6 +31,12 @@ h2 {
   margin-top: -55px;
   margin-bottom: 41px; }
 
+h4 {
+  font-size: 28px;
+  font-family: 'Zorus_Serif', serif;
+  text-transform: uppercase;
+  margin-bottom: 10px; }
+
 h3 {
   text-align: center;
   color: #514f4f;
@@ -52,6 +58,11 @@ h3 {
     margin: 5px 0 0 -60px; }
   h3:after {
     margin: 5px 0 0 1px; }
+
+p {
+  font-size: 20px;
+  font-family: 'PT Sans', sans-serif;
+  padding-top: 10px; }
 
 video.bgvid {
   position: fixed;
@@ -89,7 +100,7 @@ section {
 
 .results.active {
   width: 1200px;
-  margin: 11% auto;
+  margin: 4% auto;
   display: flex;
   justify-content: center; }
 
@@ -106,12 +117,31 @@ section {
     -moz-box-shadow: 9px 10px 9px 0px rgba(0, 0, 0, 0.75);
     box-shadow: 9px 10px 9px 0px rgba(0, 0, 0, 0.75);
     position: relative; }
-    .resultBox img:hover {
-      background: rgba(0, 0, 0, 0.75);
-      text-align: center; }
-      .resultBox img:hover .resultText {
-        opacity: 1; }
 
+/* span.resultText{
+  background: rgba(0,0,0,0.5);
+  color: white;
+  cursor: pointer;
+  display: table;
+  height: 150px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 150px;
+  opacity: 0;
+}
+
+
+span.resultText span {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+.resultBox img:hover span.resultText {
+  opacity: 1;
+}
+
+ */
 /* img:hover .resultText {
   display:block;
   position:absolute;
@@ -120,6 +150,17 @@ section {
   text-align:center;
  }
  */
+/*  &:hover {
+  opacity: 0.2;
+  .resultText {
+    display:block;
+    position:absolute;
+    width:100%;
+    float:left;
+    text-align:center;
+  }
+}
+*/
 .animate {
   animation: animation 4s;
   -webkit-animation: animation 4s;
