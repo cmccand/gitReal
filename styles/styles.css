@@ -23,6 +23,20 @@ h1 {
   text-align: center;
   color: #1c1c1c; }
 
+h2 {
+  font-size: 24px;
+  font-family: 'Zorus_Serif', serif;
+  text-transform: uppercase;
+  text-align: left;
+  margin-top: -55px;
+  margin-bottom: 41px; }
+
+h4 {
+  font-size: 28px;
+  font-family: 'Zorus_Serif', serif;
+  text-transform: uppercase;
+  margin-bottom: 10px; }
+
 h3 {
   text-align: center;
   color: #514f4f;
@@ -44,6 +58,11 @@ h3 {
     margin: 5px 0 0 -60px; }
   h3:after {
     margin: 5px 0 0 1px; }
+
+p {
+  font-size: 20px;
+  font-family: 'PT Sans', sans-serif;
+  padding-top: 10px; }
 
 video.bgvid {
   position: fixed;
@@ -68,7 +87,7 @@ section {
   section .mood, section .genre, section .subMood {
     display: block;
     text-align: center;
-    margin-top: 20%; }
+    margin-top: 30%; }
   section .genre {
     margin-top: -6%; }
   section .subMood {
@@ -81,14 +100,15 @@ section {
 
 .results.active {
   width: 1200px;
-  margin: 11% auto;
+  margin: 4% auto;
   display: flex;
   justify-content: center; }
 
 .resultBox {
   display: inline-block;
   width: 29%;
-  vertical-align: top; }
+  vertical-align: top;
+  overflow: hidden; }
   .resultBox img {
     width: 300px;
     height: 450px;
@@ -97,15 +117,50 @@ section {
     -moz-box-shadow: 9px 10px 9px 0px rgba(0, 0, 0, 0.75);
     box-shadow: 9px 10px 9px 0px rgba(0, 0, 0, 0.75);
     position: relative; }
-  .resultBox:hover img {
-    opacity: 0.2; }
-  .resultBox:hover .resultText {
-    display: block;
-    position: absolute;
-    width: 100%;
-    float: left;
-    text-align: center; }
 
+/* span.resultText{
+  background: rgba(0,0,0,0.5);
+  color: white;
+  cursor: pointer;
+  display: table;
+  height: 150px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 150px;
+  opacity: 0;
+}
+
+
+span.resultText span {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+.resultBox img:hover span.resultText {
+  opacity: 1;
+}
+
+ */
+/* img:hover .resultText {
+  display:block;
+  position:absolute;
+  width:100%;
+  float:left;
+  text-align:center;
+ }
+ */
+/*  &:hover {
+  opacity: 0.2;
+  .resultText {
+    display:block;
+    position:absolute;
+    width:100%;
+    float:left;
+    text-align:center;
+  }
+}
+*/
 .animate {
   animation: animation 4s;
   -webkit-animation: animation 4s;
@@ -116,13 +171,13 @@ section {
   text-align: center;
   margin: 20px auto;
   font-family: 'PT Sans', Courier;
-  font-size: 30px;
+  font-size: 36px;
   text-transform: uppercase;
   color: black;
-  text-shadow: -3px 0px 0px #eee, 5px 1px 0px #707070;
+  text-shadow: 1px 0px 0px #eee, 4px 2px 0px #707070;
   width: 242px;
   height: 120px;
-  background-color: #e8e8e8;
+  background: linear-gradient(rgba(255, 255, 244, 0.5), rgba(255, 255, 244, 0.5));
   border: 3px solid #707070;
   border-radius: 10px; }
   .moodbtn:hover {
