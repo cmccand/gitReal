@@ -1,5 +1,4 @@
 
-
 body, h1, h2, h3, h4, h5, p, a {
   margin: 0;
   padding: 0;
@@ -117,8 +116,21 @@ section {
     height: 450px;
     border-radius: 5px;
     @include shadow(9px 10px 9px 0px rgba(0,0,0,0.75));
+    position:relative;
+    }
+  &:hover {
+    img {
+    opacity:0.2;
+    }
+    .resultText {
+    display:block;
+    position:absolute;
+    width:100%;
+    float:left;
+    text-align:center;
     }
   }
+}
 
 
 .animate {

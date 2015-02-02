@@ -95,7 +95,16 @@ section {
     border-radius: 5px;
     -webkit-box-shadow: 9px 10px 9px 0px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 9px 10px 9px 0px rgba(0, 0, 0, 0.75);
-    box-shadow: 9px 10px 9px 0px rgba(0, 0, 0, 0.75); }
+    box-shadow: 9px 10px 9px 0px rgba(0, 0, 0, 0.75);
+    position: relative; }
+  .resultBox:hover img {
+    opacity: 0.2; }
+  .resultBox:hover .resultText {
+    display: block;
+    position: absolute;
+    width: 100%;
+    float: left;
+    text-align: center; }
 
 .animate {
   animation: animation 4s;
