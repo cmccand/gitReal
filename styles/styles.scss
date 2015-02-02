@@ -184,6 +184,10 @@ section {
   transform: translateY(1000px);
 }
 
+.fadein {
+  @include fadein(fade 2s .5s backwards);
+}
+
 
 //BUTTONS
 .moodbtn {
@@ -232,6 +236,17 @@ section {
     opacity:0;
   }
 }
+
+@-webkit-keyframes fade {
+  0%{
+    opacity:0;
+  }
+  100%
+  {
+    opacity:1;
+  }
+}
+
 
 
 //JQUERY

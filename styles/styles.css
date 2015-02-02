@@ -146,6 +146,11 @@ section {
   opacity: 0;
   transform: translateY(1000px); }
 
+.fadein {
+  animation: fade 2s .5s backwards;
+  -webkit-animation: fade 2s .5s backwards;
+  -moz-animation: fade 2s .5s backwards; }
+
 .moodbtn {
   text-align: center;
   margin: 10px;
@@ -180,6 +185,13 @@ section {
   100% {
     -webkit-transform: translateY(-250px);
     opacity: 0; } }
+
+@-webkit-keyframes fade {
+  0% {
+    opacity: 0; }
+
+  100% {
+    opacity: 1; } }
 
 div {
   display: none; }

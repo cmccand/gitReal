@@ -459,6 +459,7 @@ $(document).ready(function(){
     $(this).siblings('h2').fadeOut('slow');
     $(this).addClass('chosenOne');
     $(relatedMood).addClass('active');
+    $(relatedMood).addClass('fadein');
     $(relatedMood).parent('div').addClass('active');
     $(relatedMood).parent().siblings().removeClass('active');
 

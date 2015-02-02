@@ -20,6 +20,12 @@ $subHead-font-color: #514f4f;
   -moz-animation: $animateDown;
 }
 
+@mixin fadein ($fadein) {
+  animation: $fadein;
+  -webkit-animation: $fadein;
+  -moz-animation: $fadein;
+}
+
 @mixin sepia ($sepia) {
   filter: $sepia;
   -webkit-filter: $sepia;
