@@ -38,6 +38,7 @@ h2 {
   margin-top: -55px;
   margin-bottom: 41px;
   margin-left: 20%;
+  letter-spacing: 1.5px;
 
 }
 
@@ -110,11 +111,14 @@ section {
   }
   .genre {
     @extend .mood;
-    margin-top: -8%;
+    margin-top: -14%;
+    h2 {
+      margin-top: 0;
+    }
     }
     .subMood {
       @extend .mood;
-      margin-top: -181px;
+      margin-top: -12%;
       }
     }
 
