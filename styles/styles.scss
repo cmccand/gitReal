@@ -116,26 +116,16 @@ section {
   }
   .genre {
     @extend .mood;
-<<<<<<< HEAD
-    margin-top: -8%;
-  }
-  .subMood {
-    @extend .mood;
-    margin-top: -181px;
-  }
-}
-=======
     margin-top: -14%;
     h2 {
       margin-top: 0;
     }
-    }
-    .subMood {
-      @extend .mood;
-      margin-top: -12%;
-      }
-    }
->>>>>>> 5374c707ef204bbacb3b0bcef3e913d030b071b0
+  }
+  .subMood {
+    @extend .mood;
+    margin-top: -12%;
+  }
+}
 
 .chosenOne {
   @include chosen(rise 2s forwards);
@@ -265,8 +255,6 @@ section {
     opacity:1;
   }
 }
-
-
 
 //JQUERY
 

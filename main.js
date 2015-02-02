@@ -475,19 +475,15 @@ $(document).ready(function(){
 
   });
 
+  $('.mood').on('click', 'button', function(event){
+    $('.mood').siblings('.subMood').find('h2').fadeIn('fast');
 
-  $('.subMood h2').hide();
+  });
 
-$('.mood').on('click', 'button', function(event){
-  $('.mood').siblings('.subMood').find('h2').fadeIn('fast');
+  $('.subMood').on('click', 'button', function(event){
+    $('.subMood').siblings('.genre').find('h2').fadeIn('fast');
 
-});
-
-$('.subMood').on('click', 'button', function(event){
-  $('.subMood').siblings('.genre').find('h2').fadeIn('fast');
-
-});
-
+  });
 
 
 

@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,10 +12,11 @@
 </head>
 <body>
   <video autoplay class="bgvid" loop>
+    <!-- WCAG general accessibility recommendation is that media such as background video play through only once. Loop turned on for the purposes of illustration; if removed, the end of the video will fade in the same way created by pressing the "Pause" button  -->
     <source src="videoSimple.mp4" type="video/mp4">
     </video>
     <header>
-      <h1>Flixar</h1>
+      <a href="index.html"><h1>Flixar</h1></a>
       <h3>More Time Watching, Less Time Choosing</h3>
     </header>
     <section class='active'>
@@ -28,265 +28,153 @@
         <button class="moodbtn" rel='dark'>Dark</button>
       </div>
       <div class="subMood">
-        <h2>Ahh...</h2><span><h2>I am feeling that way too!</h2>
-          <h2>What else do you feel today?</h2>
-          <div class="happy">
-            <button class="moodbtn" rel="romantic">Romantic</button>
-            <button class="moodbtn" rel='silly'>Silly</button>
-            <button class="moodbtn" rel='optimistic'>Optimistic</button>
-            <button class="moodbtn" rel='campy'>Campy</button>
-          </div>
-          <div class="lonely">
-            <button class="moodbtn" rel="drunk">Drunk</button>
-            <button class="moodbtn" rel='nostalgic'>Nostalgic</button>
-            <button class="moodbtn" rel='sappy'>Sappy</button>
-            <button class="moodbtn" rel='heartbroken'>Heartbroken</button>
-          </div>
-          <div class="inspired">
-            <button class="moodbtn" rel="sporty">Sporty</button>
-            <button class="moodbtn" rel='intense'>Intense</button>
-            <button class="moodbtn" rel='intelligent'>Intelligent</button>
-            <button class="moodbtn" rel='creative'>Creative</button>
-          </div>
-          <div class="dark">
-            <button class="moodbtn" rel="cynical">Cynical</button>
-            <button class="moodbtn" rel='sadistic'>Sadistic</button>
-            <button class="moodbtn" rel='perverted'>Perverted</button>
-            <button class="moodbtn" rel='heartbroken2'>Heartbroken</button>
-          </div>
-        </div>
-
-        <div class="genre">
-          <div class="romantic">
-            <button class="moodbtn" rel='aliensResult'>Alien Invasion</button>
-            <button class="moodbtn" rel ='dysfunctional'>Dysfunctional Family<br /> Finds Functionality</button>
-          </div>
-          <div class="silly">
-            <button class="moodbtn" rel='misplaced'>Must Find Misplaced Belongings</button>
-            <button class="moodbtn" rel='dogEscapes'>Dog Escapes from his Cage and <br />wreaks havoc on outside world</button>
-          </div>
-          <div class="optimistic">
-            <button class="moodbtn" rel='justBelieve'>Everything in Your Life Will Work Out <br />Great if You Just Believe</button>
-            <button class="moodbtn" rel='cancer'>At Least You Dont Have Cancer</button>
-          </div>
-          <div class="campy">
-            <button class="moodbtn" rel='fakeBlood'>Fake Blood & Bad Makeup - The 80's Edition</button>
-            <button class="moodbtn" rel="purple">You Can Never Have Too Much Purple</button>
-          </div>
-          <div class="drunk">
-            <button class="moodbtn" rel='famousWriter'>If You Drink Enough You <br />Will Probably Become a Famous Writer</button>
-            <button class="moodbtn" rel='youSuck'>Maybe You Are Lonely <br />Because You Suck</button>
-          </div>
-          <div class="nostalgic">
-            <button class="moodbtn" rel='witty'>You Should Have Been Alive in <br />the 40's When Everyone Was Witty</button>
-            <button class="moodbtn" rel='happySince12'>You Haven't Been Happy Since you Were 12.</button>
-          </div>
-          <div class="sappy">
-            <button class="moodbtn" rel='hotelMaid'>The Right Person will Enter Your <br />Life in the Form of a Hotel Maid</button>
-            <button class="moodbtn" rel='vDay'>It's Valentines Day and I'm Alone</button>
-          </div>
-          <div class="heartbroken">
-            <button class="moodbtn" rel='dog'>It’s OK, All You Need is Your Dog. <br />But He’ll Die Soon</button>
-            <button class="moodbtn" rel='bitter'>What Doesn't Kill You Will Leave You Bitter <br />for the Rest of Your Life</button>
-          </div>
-          <div class="sporty">
-            <button class="moodbtn" rel='rudySacks'>If you Don't Get Chill Bumps <br />When Rudy Makes the Sack, <br />Try Our Lonely Category</button>
-            <button class="moodbtn" rel='themeMusic'>The Theme Music Alone<br /> Will Make you Feel Invincible</button>
-          </div>
-          <div class="intense">
-            <button class="moodbtn" rel='assholeMakeHistory'>The More of an Asshole You are, <br />the More Likely you are to Make History</button>
-            <button class="moodbtn" rel ='survivePrison'>You'll Survive Prison if your<br /> Jawline is Strong Enough</button>
-          </div>
-          <div class="intelligent">
-            <button class="moodbtn" rel='genius'>If you Hear Voices in your Head, <br />you Might Be a Genius</button>
-            <button class="moodbtn" rel='nazi'>Crack the Nazi Code, Help End the Way, and You'll End <br />Up Chemically Castrated and Suicidal</button>
-          </div>
-          <div class="creative">
-            <button class="moodbtn" rel='splatter'>Splatter Some Paint on a Page and <br />See What Happens</button>
-            <button class="moodbtn" rel='hurtYourself'>You are Not Really Creative<br /> Unless You Hurt Yourself</button>
-          </div>
-          <div class="cynical">
-            <button class="moodbtn" rel='midlifeCrisis'>You're 26 and Going<br /> Through a Midlife Crisis</button>
-            <button class="moodbtn" rel='sarcasm'>Sarcasm Is Endearing</button>
-          </div>
-          <div class="sadistic">
-            <button class="moodbtn" rel='banned'>If it is Banned, <br />It Must Be Good</button>
-            <button class="moodbtn" rel='chopEm'>You Better Chop Them Up<br /> or Eat Them Whole</button>
-          </div>
-          <div class="perverted">
-            <button class="moodbtn" rel='incest'>Incest Adultery, and Autoerotic Asphyxiation</button>
-            <button class="moodbtn" rel='foodSex'>How to Incorporate Food Into Sex</button>
-          </div>
-          <div class="heartbroken2">
-            <button class="moodbtn" rel='dog2'>It is OK, All You Need Is Your Dog.<br /> But He Will Die Soon.</button>
-            <button class="moodbtn" rel='scarred'>What Doesn't Kill You Will Leave You Scarred <br />for the Rest of Your Life.</button>
-          </div>
-        </div>
-      </section>
-=======
-      <source src="videoSimple.mp4" type="video/mp4">
-      </video>
-  <header>
-  <a href="index.html"><h1>Flixar</h1></a>
-    <h3>More Time Watching, Less Time Choosing</h3>
-  </header>
-  <section class='active'>
-    <div class="mood active">
-      <h2>How are you feeling today?</h2>
-      <button class="moodbtn" rel="happy">Happy</button>
-      <button class="moodbtn" rel="lonely">Lonely</button>
-      <button class="moodbtn" rel="inspired">Inspired</button>
-      <button class="moodbtn" rel='dark'>Dark</button>
-    </div>
-    <div class="subMood">
         <h2>How else do you feel?</h2>
-      <div class="happy">
-        <button class="moodbtn" rel="romantic">Romantic</button>
-        <button class="moodbtn" rel='silly'>Silly</button>
-        <button class="moodbtn" rel='optimistic'>Optimistic</button>
-        <button class="moodbtn" rel='campy'>Campy</button>
+        <div class="happy">
+          <button class="moodbtn" rel="romantic">Romantic</button>
+          <button class="moodbtn" rel='silly'>Silly</button>
+          <button class="moodbtn" rel='optimistic'>Optimistic</button>
+          <button class="moodbtn" rel='campy'>Campy</button>
+        </div>
+        <div class="lonely">
+          <button class="moodbtn" rel="drunk">Drunk</button>
+          <button class="moodbtn" rel='nostalgic'>Nostalgic</button>
+          <button class="moodbtn" rel='sappy'>Sappy</button>
+          <button class="moodbtn" rel='heartbroken'>Heartbroken</button>
+        </div>
+        <div class="inspired">
+          <button class="moodbtn" rel="sporty">Sporty</button>
+          <button class="moodbtn" rel='intense'>Intense</button>
+          <button class="moodbtn" rel='intelligent'>Intelligent</button>
+          <button class="moodbtn" rel='creative'>Creative</button>
+        </div>
+        <div class="dark">
+          <button class="moodbtn" rel="cynical">Cynical</button>
+          <button class="moodbtn" rel='sadistic'>Sadistic</button>
+          <button class="moodbtn" rel='perverted'>Perverted</button>
+          <button class="moodbtn" rel='heartbroken2'>Heartbroken</button>
+        </div>
       </div>
-      <div class="lonely">
-        <button class="moodbtn" rel="drunk">Drunk</button>
-        <button class="moodbtn" rel='nostalgic'>Nostalgic</button>
-        <button class="moodbtn" rel='sappy'>Sappy</button>
-        <button class="moodbtn" rel='heartbroken'>Heartbroken</button>
+
+      <div class="genre">
+        <h2>These are some pretty specific feelings!</h2>
+        <h2>Let us find a genre to match. Choose what genre you would prefer</h2>
+        <div class="romantic">
+          <button class="moodbtn" rel='aliensResult'>Alien Invasion</button>
+          <button class="moodbtn" rel ='dysfunctional'>Dysfunctional Family<br /> Finds Functionality</button>
+        </div>
+        <div class="silly">
+          <button class="moodbtn" rel='misplaced'>Must Find Misplaced Belongings</button>
+          <button class="moodbtn" rel='dogEscapes'>Dog Escapes from his Cage and <br />wreaks havoc on outside world</button>
+        </div>
+        <div class="optimistic">
+          <button class="moodbtn" rel='justBelieve'>Everything in Your Life Will Work Out <br />Great if You Just Believe</button>
+          <button class="moodbtn" rel='cancer'>At Least You Dont Have Cancer</button>
+        </div>
+        <div class="campy">
+          <button class="moodbtn" rel='fakeBlood'>Fake Blood & Bad Makeup - The 80's Edition</button>
+          <button class="moodbtn" rel="purple">You Can Never Have Too Much Purple</button>
+        </div>
+        <div class="drunk">
+          <button class="moodbtn" rel='famousWriter'>If You Drink Enough You <br />Will Probably Become a Famous Writer</button>
+          <button class="moodbtn" rel='youSuck'>Maybe You Are Lonely <br />Because You Suck</button>
+        </div>
+        <div class="nostalgic">
+          <button class="moodbtn" rel='witty'>You Should Have Been Alive in <br />the 40's When Everyone Was Witty</button>
+          <button class="moodbtn" rel='happySince12'>You Haven't Been Happy Since you Were 12.</button>
+        </div>
+        <div class="sappy">
+          <button class="moodbtn" rel='hotelMaid'>The Right Person will Enter Your <br />Life in the Form of a Hotel Maid</button>
+          <button class="moodbtn" rel='vDay'>It's Valentines Day and I'm Alone</button>
+        </div>
+        <div class="heartbroken">
+          <button class="moodbtn" rel='dog'>It’s OK, All You Need is Your Dog. <br />But He’ll Die Soon</button>
+          <button class="moodbtn" rel='bitter'>What Doesn't Kill You Will Leave You Bitter <br />for the Rest of Your Life</button>
+        </div>
+        <div class="sporty">
+          <button class="moodbtn" rel='rudySacks'>If you Don't Get Chill Bumps <br />When Rudy Makes the Sack, <br />Try Our Lonely Category</button>
+          <button class="moodbtn" rel='themeMusic'>The Theme Music Alone<br /> Will Make you Feel Invincible</button>
+        </div>
+        <div class="intense">
+          <button class="moodbtn" rel='assholeMakeHistory'>The More of an Asshole You are, <br />the More Likely you are to Make History</button>
+          <button class="moodbtn" rel ='survivePrison'>You'll Survive Prison if your<br /> Jawline is Strong Enough</button>
+        </div>
+        <div class="intelligent">
+          <button class="moodbtn" rel='genius'>If you Hear Voices in your Head, <br />you Might Be a Genius</button>
+          <button class="moodbtn" rel='nazi'>Crack the Nazi Code, Help End the Way, and You'll End <br />Up Chemically Castrated and Suicidal</button>
+        </div>
+        <div class="creative">
+          <button class="moodbtn" rel='splatter'>Splatter Some Paint on a Page and <br />See What Happens</button>
+          <button class="moodbtn" rel='hurtYourself'>You are Not Really Creative<br /> Unless You Hurt Yourself</button>
+        </div>
+        <div class="cynical">
+          <button class="moodbtn" rel='midlifeCrisis'>You're 26 and Going<br /> Through a Midlife Crisis</button>
+          <button class="moodbtn" rel='sarcasm'>Sarcasm Is Endearing</button>
+        </div>
+        <div class="sadistic">
+          <button class="moodbtn" rel='banned'>If it is Banned, <br />It Must Be Good</button>
+          <button class="moodbtn" rel='chopEm'>You Better Chop Them Up<br /> or Eat Them Whole</button>
+        </div>
+        <div class="perverted">
+          <button class="moodbtn" rel='incest'>Incest Adultery, and Autoerotic Asphyxiation</button>
+          <button class="moodbtn" rel='foodSex'>How to Incorporate Food Into Sex</button>
+        </div>
+        <div class="heartbroken2">
+          <button class="moodbtn" rel='dog2'>It is OK, All You Need Is Your Dog.<br /> But He Will Die Soon.</button>
+          <button class="moodbtn" rel='scarred'>What Doesn't Kill You Will Leave You Scarred <br />for the Rest of Your Life.</button>
+        </div>
       </div>
-      <div class="inspired">
-        <button class="moodbtn" rel="sporty">Sporty</button>
-        <button class="moodbtn" rel='intense'>Intense</button>
-        <button class="moodbtn" rel='intelligent'>Intelligent</button>
-        <button class="moodbtn" rel='creative'>Creative</button>
-      </div>
-      <div class="dark">
-        <button class="moodbtn" rel="cynical">Cynical</button>
-        <button class="moodbtn" rel='sadistic'>Sadistic</button>
-        <button class="moodbtn" rel='perverted'>Perverted</button>
-        <button class="moodbtn" rel='heartbroken2'>Heartbroken</button>
-      </div>
+    </section>
+
+
+    <div class="results">
+      <h2>We searched our library to find you the perfect movies for your mood</h2>
+      <div class="aliensResult"></div>
+      <div class="dysfunctional"></div>
+      <div class="misplaced"></div>
+      <div class="dogEscapes"></div>
+      <div class="justBelieve"></div>
+      <div class="cancer"></div>
+      <div class="fakeBlood"></div>
+      <div class="purple"></div>
+      <div class="famousWriter"></div>
+      <div class="youSuck"></div>
+      <div class="witty"></div>
+      <div class="happySince12"></div>
+      <div class="hotelMaid"></div>
+      <div class="vDay"></div>
+      <div class="dog"></div>
+      <div class="bitter"></div>
+      <div class="rudySacks"></div>
+      <div class="themeMusic"></div>
+      <div class="assholeMakeHistory"></div>
+      <div class="survivePrison"></div>
+      <div class="genius"></div>
+      <div class="nazi"></div>
+      <div class="splatter"></div>
+      <div class="hurtYourself"></div>
+      <div class="midlifeCrisis"></div>
+      <div class="sarcasm"></div>
+      <div class="banned"></div>
+      <div class="chopEm"></div>
+      <div class="incest"></div>
+      <div class="foodSex"></div>
+      <div class="dog2"></div>
+      <div class="scarred"></div>
+
     </div>
 
-    <div class="genre">
-      <h2>These are some pretty specific feelings!</h2>
-      <h2>Let us find a genre to match. Choose what genre you would prefer</h2>
-      <div class="romantic">
-      <button class="moodbtn" rel='aliensResult'>Alien Invasion</button>
-      <button class="moodbtn" rel ='dysfunctional'>Dysfunctional Family<br /> Finds Functionality</button>
-      </div>
-      <div class="silly">
-        <button class="moodbtn" rel='misplaced'>Must Find Misplaced Belongings</button>
-        <button class="moodbtn" rel='dogEscapes'>Dog Escapes from his Cage and <br />wreaks havoc on outside world</button>
-      </div>
-      <div class="optimistic">
-        <button class="moodbtn" rel='justBelieve'>Everything in Your Life Will Work Out <br />Great if You Just Believe</button>
-        <button class="moodbtn" rel='cancer'>At Least You Dont Have Cancer</button>
-      </div>
-      <div class="campy">
-        <button class="moodbtn" rel='fakeBlood'>Fake Blood & Bad Makeup - The 80's Edition</button>
-        <button class="moodbtn" rel="purple">You Can Never Have Too Much Purple</button>
-      </div>
-      <div class="drunk">
-        <button class="moodbtn" rel='famousWriter'>If You Drink Enough You <br />Will Probably Become a Famous Writer</button>
-        <button class="moodbtn" rel='youSuck'>Maybe You Are Lonely <br />Because You Suck</button>
-      </div>
-      <div class="nostalgic">
-        <button class="moodbtn" rel='witty'>You Should Have Been Alive in <br />the 40's When Everyone Was Witty</button>
-        <button class="moodbtn" rel='happySince12'>You Haven't Been Happy Since you Were 12.</button>
-      </div>
-      <div class="sappy">
-        <button class="moodbtn" rel='hotelMaid'>The Right Person will Enter Your <br />Life in the Form of a Hotel Maid</button>
-        <button class="moodbtn" rel='vDay'>It's Valentines Day and I'm Alone</button>
-      </div>
-      <div class="heartbroken">
-        <button class="moodbtn" rel='dog'>It’s OK, All You Need is Your Dog. <br />But He’ll Die Soon</button>
-        <button class="moodbtn" rel='bitter'>What Doesn't Kill You Will Leave You Bitter <br />for the Rest of Your Life</button>
-      </div>
-      <div class="sporty">
-        <button class="moodbtn" rel='rudySacks'>If you Don't Get Chill Bumps <br />When Rudy Makes the Sack, <br />Try Our Lonely Category</button>
-        <button class="moodbtn" rel='themeMusic'>The Theme Music Alone<br /> Will Make you Feel Invincible</button>
-      </div>
-      <div class="intense">
-        <button class="moodbtn" rel='assholeMakeHistory'>The More of an Asshole You are, <br />the More Likely you are to Make History</button>
-        <button class="moodbtn" rel ='survivePrison'>You'll Survive Prison if your<br /> Jawline is Strong Enough</button>
-      </div>
-      <div class="intelligent">
-        <button class="moodbtn" rel='genius'>If you Hear Voices in your Head, <br />you Might Be a Genius</button>
-        <button class="moodbtn" rel='nazi'>Crack the Nazi Code, Help End the Way, and You'll End <br />Up Chemically Castrated and Suicidal</button>
-      </div>
-      <div class="creative">
-        <button class="moodbtn" rel='splatter'>Splatter Some Paint on a Page and <br />See What Happens</button>
-        <button class="moodbtn" rel='hurtYourself'>You are Not Really Creative<br /> Unless You Hurt Yourself</button>
-      </div>
-      <div class="cynical">
-        <button class="moodbtn" rel='midlifeCrisis'>You're 26 and Going<br /> Through a Midlife Crisis</button>
-        <button class="moodbtn" rel='sarcasm'>Sarcasm Is Endearing</button>
-      </div>
-      <div class="sadistic">
-        <button class="moodbtn" rel='banned'>If it is Banned, <br />It Must Be Good</button>
-        <button class="moodbtn" rel='chopEm'>You Better Chop Them Up<br /> or Eat Them Whole</button>
-      </div>
-      <div class="perverted">
-        <button class="moodbtn" rel='incest'>Incest Adultery, and Autoerotic Asphyxiation</button>
-        <button class="moodbtn" rel='foodSex'>How to Incorporate Food Into Sex</button>
-      </div>
-      <div class="heartbroken2">
-        <button class="moodbtn" rel='dog2'>It is OK, All You Need Is Your Dog.<br /> But He Will Die Soon.</button>
-        <button class="moodbtn" rel='scarred'>What Doesn't Kill You Will Leave You Scarred <br />for the Rest of Your Life.</button>
-      </div>
-    </div>
-  </section>
->>>>>>> 5374c707ef204bbacb3b0bcef3e913d030b071b0
-
-
-      <div class="results">
-        <h2>We searched our library to find you the perfect movies for your mood</h2>
-        <div class="aliensResult"></div>
-        <div class="dysfunctional"></div>
-        <div class="misplaced"></div>
-        <div class="dogEscapes"></div>
-        <div class="justBelieve"></div>
-        <div class="cancer"></div>
-        <div class="fakeBlood"></div>
-        <div class="purple"></div>
-        <div class="famousWriter"></div>
-        <div class="youSuck"></div>
-        <div class="witty"></div>
-        <div class="happySince12"></div>
-        <div class="hotelMaid"></div>
-        <div class="vDay"></div>
-        <div class="dog"></div>
-        <div class="bitter"></div>
-        <div class="rudySacks"></div>
-        <div class="themeMusic"></div>
-        <div class="assholeMakeHistory"></div>
-        <div class="survivePrison"></div>
-        <div class="genius"></div>
-        <div class="nazi"></div>
-        <div class="splatter"></div>
-        <div class="hurtYourself"></div>
-        <div class="midlifeCrisis"></div>
-        <div class="sarcasm"></div>
-        <div class="banned"></div>
-        <div class="chopEm"></div>
-        <div class="incest"></div>
-        <div class="foodSex"></div>
-        <div class="dog2"></div>
-        <div class="scarred"></div>
-
-      </div>
 
 
 
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/underscore/underscore.js"></script>
+    <script src="bower_components/foundation/js/foundation.js"></script>
 
-      <script src="bower_components/jquery/dist/jquery.js"></script>
-      <script src="bower_components/underscore/underscore.js"></script>
-      <script src="bower_components/foundation/js/foundation.js"></script>
-
-      <script src="templates.js"></script>
-      <script src="data.js"></script>
-      <script src="main.js"></script>
-
+    <script src="templates.js"></script>
+    <script src="data.js"></script>
+    <script src="main.js"></script>
 
 
-    </body>
-    </html>
+
+  </body>
+  </html>
