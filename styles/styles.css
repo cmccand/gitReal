@@ -101,9 +101,9 @@ section {
     margin-top: -12%; }
 
 .chosenOne {
-  animation: rise 2s forwards;
   -webkit-animation: rise 2s forwards;
-  -moz-animation: rise 2s forwards; }
+  -moz-animation: rise 2s forwards;
+  animation: rise 2s forwards; }
 
 .results.active {
   width: 1200px;
@@ -147,16 +147,20 @@ section {
     position: relative; }
 
 .animate {
-  animation: animation 4s;
   -webkit-animation: animation 4s;
   -moz-animation: animation 4s;
+  animation: animation 4s;
   opacity: 0;
+  -webkit-transform: translateY(1000px);
+  -moz-transform: translateY(1000px);
+  -ms-transform: translateY(1000px);
+  -o-transform: translateY(1000px);
   transform: translateY(1000px); }
 
 .fadein {
-  animation: fade 2s .5s backwards;
-  -webkit-animation: fade 2s .5s backwards;
-  -moz-animation: fade 2s .5s backwards; }
+  -webkit-animation: fade 2s 0.5s backwards;
+  -moz-animation: fade 2s 0.5s backwards;
+  animation: fade 2s 0.5s backwards; }
 
 .moodbtn {
   text-align: center;
@@ -181,25 +185,65 @@ section {
   0% {
     opacity: 100;
     -webkit-transform: rotate(20deg); }
-
   100% {
     opacity: 0;
+    -webkit-transform: translateY(1000px);
+    display: none; } }
+@-moz-keyframes animation {
+  0% {
+    opacity: 100;
+    -moz-transform: rotate(20deg); }
+  100% {
+    opacity: 0;
+    -moz-transform: translateY(1000px);
+    display: none; } }
+@keyframes animation {
+  0% {
+    opacity: 100;
+    -webkit-transform: rotate(20deg);
+    -moz-transform: rotate(20deg);
+    -ms-transform: rotate(20deg);
+    -o-transform: rotate(20deg);
+    transform: rotate(20deg); }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(1000px);
+    -moz-transform: translateY(1000px);
+    -ms-transform: translateY(1000px);
+    -o-transform: translateY(1000px);
     transform: translateY(1000px);
     display: none; } }
-
 @-webkit-keyframes rise {
-
   100% {
     -webkit-transform: translateY(-250px);
     opacity: 0; } }
-
+@-moz-keyframes rise {
+  100% {
+    -moz-transform: translateY(-250px);
+    opacity: 0; } }
+@keyframes rise {
+  100% {
+    -webkit-transform: translateY(-250px);
+    -moz-transform: translateY(-250px);
+    -ms-transform: translateY(-250px);
+    -o-transform: translateY(-250px);
+    transform: translateY(-250px);
+    opacity: 0; } }
 @-webkit-keyframes fade {
   0% {
     opacity: 0; }
-
   100% {
     opacity: 1; } }
-
+@-moz-keyframes fade {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@keyframes fade {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
 div {
   display: none; }
 
@@ -213,5 +257,8 @@ div {
 @media screen and (max-device-width: 800px) {
   html {
     background: url(polina.jpg) #000 no-repeat center center fixed; }
+
   #bgvid {
     display: none; } }
+
+/*# sourceMappingURL=styles.css.map */
