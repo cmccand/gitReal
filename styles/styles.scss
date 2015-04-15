@@ -1,3 +1,5 @@
+@import bourbon/bourbon
+
 
 body, h1, h2, h3, h4, h5, p, a {
   margin: 0;
@@ -190,11 +192,11 @@ section {
 .animate {
   @include animateDown(animation 4s);
   opacity:0;
-  transform: translateY(1000px);
+  @include transform(translateY(1000px));
 }
 
 .fadein {
-  @include fadein(fade 2s .5s backwards);
+  @include animation(fade 2s .5s backwards);
 }
 
 
