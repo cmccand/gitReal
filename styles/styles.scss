@@ -130,7 +130,7 @@ section {
 }
 
 .chosenOne {
-  @include chosen(rise 2s forwards);
+  @include animation(rise 2s forwards);
 
 }
 
@@ -224,7 +224,7 @@ section {
 
 
 //KEYFRAMES
-@-webkit-keyframes animation{
+@include keyframes(animation) {
   0%{
     opacity:100;
     -webkit-transform: rotate(20deg);
@@ -238,7 +238,7 @@ section {
 }
 
 
-@-webkit-keyframes rise{
+@include keyframes(rise) {
   0%{
   }
   100%
@@ -248,7 +248,7 @@ section {
   }
 }
 
-@-webkit-keyframes fade {
+@include keyframes (fade) {
   0%{
     opacity:0;
   }
