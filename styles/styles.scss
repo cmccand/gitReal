@@ -190,7 +190,7 @@ section {
 
 
 .animate {
-  @include animateDown(animation 4s);
+  @include animation(animation 4s);
   opacity:0;
   @include transform(translateY(1000px));
 }
@@ -248,7 +248,7 @@ section {
   }
 }
 
-@include keyframes (fade) {
+@include keyframes(fade) {
   0%{
     opacity:0;
   }
