@@ -193,7 +193,7 @@ section {
 .animate {
   @include animation(animation 4s);
   opacity:0;
-  @include transform(translateY(1000px));
+  /* @include transform(translateY(1000px)); */
 }
 
 .fadein {
@@ -217,7 +217,7 @@ section {
     border: 8px double black;
     background: linear-gradient(rgba(112,112,112,0.5), rgba(112,112,112,0.5));
     color: black;
-    @include transition(all 2s ease);
+    @include transition(background 2s ease);
 
 
   }

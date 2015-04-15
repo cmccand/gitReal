@@ -156,11 +156,7 @@ section {
   -moz-animation: animation 4s;
   animation: animation 4s;
   opacity: 0;
-  -webkit-transform: translateY(1000px);
-  -moz-transform: translateY(1000px);
-  -ms-transform: translateY(1000px);
-  -o-transform: translateY(1000px);
-  transform: translateY(1000px); }
+  /* @include transform(translateY(1000px)); */ }
 
 .fadein {
   -webkit-animation: fade 2s 0.5s backwards;
@@ -182,9 +178,9 @@ section {
     border: 8px double black;
     background: linear-gradient(rgba(112, 112, 112, 0.5), rgba(112, 112, 112, 0.5));
     color: black;
-    -webkit-transition: all 2s ease;
-    -moz-transition: all 2s ease;
-    transition: all 2s ease; }
+    -webkit-transition: background 2s ease;
+    -moz-transition: background 2s ease;
+    transition: background 2s ease; }
 
 @-webkit-keyframes animation {
   0% {
