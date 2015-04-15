@@ -227,12 +227,12 @@ section {
 @include keyframes(animation) {
   0%{
     opacity:100;
-    -webkit-transform: rotate(20deg);
+    @include transform(rotate(20deg));
   }
   100%
   {
     opacity:0;
-    transform: translateY(1000px);
+    @include transform(translateY(1000px));
     display:none;
   }
 }
@@ -243,7 +243,7 @@ section {
   }
   100%
   {
-    -webkit-transform: translateY(-250px);
+    @include transform(translateY(-250px));
     opacity:0;
   }
 }
