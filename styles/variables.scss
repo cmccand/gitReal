@@ -2,11 +2,11 @@ $h1-font-color: #1c1c1c;
 $subHead-font-color: #514f4f;
 
 
-@mixin transition ($transition) {
-  -webkit-transition: $transition;
-  -moz-transition: $transition;
-  transition: $transition;
-}
+/* @mixin transition (\$transition) {
+  -webkit-transition: \$transition;
+  -moz-transition: \$transition;
+  transition: \$transition;
+} */
 
 @mixin chosen ($chosen) {
   animation: $chosen;
